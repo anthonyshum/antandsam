@@ -94,8 +94,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="centre.html" />
     <Content Include="centres.html" />
+    <Content Include="contactus.html" />
     <Content Include="imgs\ct1.jpg" />
     <Content Include="imgs\ct2.jpg" />
     <Content Include="imgs\logo.png" />
@@ -106,6 +106,7 @@
     <Content Include="imgs\mri1.jpg" />
     <Content Include="imgs\mri2.jpg" />
     <Content Include="JavaScript.js" />
+    <Content Include="login.html" />
     <Content Include="Nav and footer.css" />
     <Content Include="Nav and footer.html" />
     <Content Include="packages.config" />
