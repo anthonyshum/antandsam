@@ -3,68 +3,55 @@
 <head>
     <title>Hercules Medical Diagnostic & Laboratory Group Limited</title>
     <meta charset="utf-8" />
-    <link href="Style.css" rel="stylesheet" />
-    <script src="JavaScript.js"></script>
+    <link href="storage.css" rel="stylesheet" />
 </head>
 <body>
 
-    <script>
-        var william_harvey = {
-            lat: 51.143183,
-            lng: 0.915349
-        };
-        var chaucer = {
-            lat: 51.261797,
-            lng: 1.087446
-        };
-        var kims = {
-            lat: 51.286869,
-            lng: 0.556317
-        };
-
-        function initMap() {
-            var myLatLng = {
-                lat: -25.363,
-                lng: 131.044
-            };
-            var map1 = new google.maps.Map(document.getElementById('william_harvey'), {
-                zoom: 14,
-                center: william_harvey
-            });
-            var marker1 = new google.maps.Marker({
-                position: william_harvey,
-                map: map1,
-                title: 'Hello World!'
-            });
-            var map2 = new google.maps.Map(document.getElementById('chaucer'), {
-                zoom: 14,
-                center: chaucer
-            });
-            var marker2 = new google.maps.Marker({
-                position: chaucer,
-                map: map2,
-                title: 'Hello World!'
-            });
-            var map3 = new google.maps.Map(document.getElementById('kims'), {
-                zoom: 14,
-                center: kims
-            });
-            var marker2 = new google.maps.Marker({
-                position: kims,
-                map: map3,
-                title: 'Hello World!'
-            });
-
-        }
-        google.maps.event.addDomListener(window, 'load', initMap);
-    </script>
-
-
-
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
-    <div id="william_harvey" style="border: 2px solid #3872ac;"></div>
-    <div id="chaucer" style="border: 2px solid #3872ac;"></div>
-    <div id="kims" style="border: 2px solid #3872ac;"></div>
+    <div id="cover"></div>
+    <div id="companyname"><a href="Home.html"><img src="imgs/logo.png" /></a></div>
+    <div id="langbar">
+        <ul id="lang">
+            <li class="lan"><a href="Home.html">Eng</a></li>
+            <li class="lan"><a href="chome.html">繁</a></li>
+            <li class="lan"><a href="schome.html">簡</a></li>
+        </ul>
+    </div>
+    <div id="fixednav">
+        <ul class="main">
+            <li><a href="Home.html">Home</a></li>
+            <li class="dropdown">
+                <a href="services.html" class="dropbtn">Serives ></a>
+                <div class="dropdown-content">
+                    <a href="services.html#MRI">Magnetic Resonance Imaging (MRI)</a>
+                    <a href="services.html#CT">Computed Tomography (CT)</a>
+                    <a href="services.html#US">Ultrasound (U/S) Scan</a>
+                    <a href="services.html#MAM">Mammography</a>
+                    <a href="services.html#XR">General X-Ray Examination</a>
+                    <a href="services.html#XC">Contrast Study</a>
+                    <a href="services.html#XD">Bone Densitometry (DEXA)</a>
+                    <a href="services.html#ECG">Resting Electrocardiography (ECG)</a>
+                    <a href="services.html#OS">Other Services</a>
+                </div>
+            <li class="dropdown">
+                <a href="centres.html" class="dropbtn">Centres ></a>
+                <div class="dropdown-content">
+                    <a href="centres.html#EH">Causeway Bay</a>
+                    <a href="centres.html#CH">Jordan</a>
+                    <a href="centres.html#KT">Kwun Tong</a>
+                    <a href="centres.html#HT">Laboratory</a>
+                </div>
+            </li>
+            <li><a href="prof.html">Professional Team</a></li>
+            <li><a href="dl.html">Download</a></li>
+            <li><a href="news.html">What's New</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </div>
+    <footer>
+        ©Copyright. Hercules Medical Diagnostic & Laboratory Group Limited 2016. All Rights Reserved.
+    </footer>
 
 </body>
 </html>

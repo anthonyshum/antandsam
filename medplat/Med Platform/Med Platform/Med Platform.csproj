@@ -96,6 +96,7 @@
   <ItemGroup>
     <Content Include="centres.html" />
     <Content Include="contactus.html" />
+    <Content Include="dl.html" />
     <Content Include="imgs\ct1.jpg" />
     <Content Include="imgs\ct2.jpg" />
     <Content Include="imgs\logo.png" />
