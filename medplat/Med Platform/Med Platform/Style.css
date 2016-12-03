@@ -235,7 +235,7 @@ footer {
 #ehmap {
         height:300px;
         width:100%;
-        z-index: initial;
+        z-index: -1;
 }
 
 #servicesava {
