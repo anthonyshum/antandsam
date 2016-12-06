@@ -1,5 +1,6 @@
 ﻿body {
     font-family:Arial;
+    margin: 0;
 }
 
 
@@ -73,7 +74,7 @@
 }
 
 /*  GO FULL WIDTH BELOW 480 PIXELS */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 680px) {
 	.col {  margin: 1% 0 1% 0%; }
     
     .span_1_of_12, .span_2_of_12, .span_3_of_12, .span_4_of_12, .span_5_of_12, .span_6_of_12, .span_7_of_12, .span_8_of_12, .span_9_of_12, .span_10_of_12, .span_11_of_12, .span_12_of_12 {
@@ -82,119 +83,78 @@
 }
 
 #companyname {
-    position:fixed;
-    top:-8px;
+    position:absolute;
     left:0px;
+    z-index:1;
 }
 
-#langbar {
-    position:fixed;
-    top:15px;
-    right:0px;
-}
+        ul.topnav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #ffffff;
+        }
 
-#cover {
-    position:fixed;
-    top:-8px;
-    left:0px;
-    width:100%;
-    height:80px;
-    background-color:#ffffff;
+            ul.topnav li {
+                float: right;
+            }
 
-}
+                ul.topnav li a {
+                    display: inline-block;
+                    color:#383d76;
+                    text-align: center;
+                    padding: 5px 5px;
+                    text-decoration: none;
+                    transition: 0.3s;
+                    font-size: smaller;
+                    border-left: 1px solid #ccc;
+                }
 
-#lang {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align:right;
-    overflow: hidden;
-    margin-top: -16px;
-    float:right;
-    background-color:#ffffff;
-}
-
-#lang > .lan {
-    font-size:smaller;
-    display:inline-block;
-    text-decoration:none;
-    color:#383d76;
-    list-style-type: none;
-    border-left: 1px solid #ccc;
-    margin:-5px -1px -5px -1px;
-}
-
-#lang > .lan > a {
-    font-size:smaller;
-    display:inline-block;
-    text-decoration:none;
-    color:#383d76;
-    list-style-type: none;
-    border-left: 1px solid #ccc;
-    margin:-5px -1px -5px -1px;
-}
-
-#lang > .lan > a:hover {
+                    ul.topnav li a:hover {
   background-color:aliceblue;
-}
+                    }
 
-.main {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #383d76;
-}
+                ul.topnav li.icon {
+                    display: none;
+                }
 
-.main > li {
-    float: left;
-}
+        @media screen and (max-width:680px) {
+            ul.topnav li {
+                display: none;
+            }
 
-li a, .dropbtn {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
+            ul.topnav li.icon {
+                float: right;
+                display: inline-block;
+            }
+        }
 
-li a:hover, .dropdown:hover .dropbtn {
-    background-color: #666a97;
-}
+        @media screen and (max-width:680px) {
+            ul.topnav.responsive {
+                position: relative;
+            }
 
-li.dropdown {
-    display: inline-block;
-}
+                ul.topnav.responsive li.icon {
+                    position: relative;
+                    right: 0;
+                    top: 0;
+                }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
+                ul.topnav.responsive li.lan {
+                    float: right;
+                    display: inline;
+                    right:0;
+                }
 
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
+                    ul.topnav.responsive li a {
+                        display: block;
+                        text-align: left;
+                    }
+        }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
 
-.dropdown:hover .dropdown-content {
-    display: block;
-}
 
-.main > #login {
-    float: right;
-}
-
-#lessmargin {
-    margin-top:-15px;
-}
 
 footer {
     background-color:#4e538b;
@@ -202,15 +162,3 @@ footer {
     color: white;
 padding: 20px 0px 20px 0px;
 }
-
-#fixednav {
-    position:fixed;
-    top:60px;
-    width:100%;
-    }
-
-.main > li:last-child {
-    float: right;
-    margin-right:10px;
-}
-
