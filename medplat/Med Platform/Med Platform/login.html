@@ -4,6 +4,35 @@
     <title>Hercules Medical Diagnostic & Laboratory Group Limited</title>
     <meta charset="utf-8" />
     <link href="Style.css" rel="stylesheet" />
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+    var onloadCallback = function () {
+        grecaptcha.render('dvCaptcha', {
+            'sitekey': '<%=ReCaptcha_Key %>',
+            'callback': function (response) {
+                $.ajax({
+                    type: "POST",
+                    url: "CS.aspx/VerifyCaptcha",
+                    data: "{response: '" + response + "'}",
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: function (r) {
+                        var captchaResponse = jQuery.parseJSON(r.d);
+                        if (captchaResponse.success) {
+                            $("[id*=txtCaptcha]").val(captchaResponse.success);
+                            $("[id*=lblAlarm]").hide();
+                        } else {
+                            $("[id*=txtCaptcha]").val("");
+                            $("[id*=lblAlarm]").show();
+                            var error = captchaResponse["error-codes"][0];
+                            $("[id*=lblAlarm]").html("RECaptcha error. " + error);
+                        }
+                    }
+                });
+            }
+        });
+    };
+    </script>
 </head>
 <body>
     <div id="cover"></div>
@@ -72,6 +101,12 @@
 
                     <div class="container" style="background-color:#f1f1f1">
                     </div>
+                </form>
+                <form action="?" method="POST">
+                    <div id="dvCaptcha" class="g-recaptcha" data-sitekey="[site key issued by google]"></div>
+                    <br />
+                    <asp:Button ID="btnSubmit" runat="Server" Text="Send" OnClick="btnSubmit_Click" />
+                    <asp:Label ID="lblAlarm" runat="server" ForeColor="Red"></asp:Label>
                 </form>
 
             </div>
