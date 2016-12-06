@@ -48,83 +48,42 @@
             <li><a href="login.html">Login</a></li>
         </ul>
     </div>
-
     <div id="contentfirstrow">We provide a wide range of Service, including MRI ...</div>
     <div id="MRI"><h2 style="text-align:center; color:#202358">Magnetic Resonance Imaging (MRI)</h2></div>
-    <div class="section group">
-        <div class="col span_4_of_12">
-            <div class="w3-content w3-section" style="max-width:100%">
-                <img class="mySlides w3-animate-fading" src="imgs/mri1.jpg" style="width:100%">
-                <img class="mySlides w3-animate-fading" src="imgs/mri2.jpg" style="width:100%">
+            <div class="section group">
+                <div class="col span_4_of_12">
+                    <img src="imgs/mri2.jpg" style="width:50%">
+                </div>
+            <div class="col span_4_of_12">
+                <p style="margin-left:10px;margin-right:10px;">
+                    Magnetic resonance imaging (MRI) is a medical imaging technique used in radiology to form pictures of the anatomy and the physiological processes of the body in both health and disease. MRI scanners use strong magnetic fields, radio waves, and field gradients to generate images of the inside of the body.
+                </p>
+            </div>
+            <div class="col span_4_of_12">
+                <h2>Centre Available:</h2>
+                <a href="centres.html#EH">Causeway Bay</a>
             </div>
         </div>
-        <div class="col span_4_of_12">
-            <p style="margin-left:10px; margin-right:10px;">
-                Magnetic resonance imaging (MRI) is a medical imaging technique used in radiology to form pictures of the anatomy and the physiological processes of the body in both health and disease. MRI scanners use strong magnetic fields, radio waves, and field gradients to generate images of the inside of the body.
-            </p>
-        </div>
-        <div class="col span_4_of_12">
-            <h2>Centre Available:</h2>
-            <a href="centres.html#EH">Causeway Bay</a>
-        </div>
-    </div>
-    <script>
-        var myIndex = 0;
-        carousel();
 
-        function carousel() {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            myIndex++;
-            if (myIndex > x.length) { myIndex = 1 }
-            x[myIndex - 1].style.display = "block";
-            setTimeout(carousel, 5000); // Change image every 2 seconds
-        }
-    </script>
-    <div id="CT"><h2 style="text-align:center; color:#202358">Computed Tomography (CT)</h2></div>
+        <div id="CT"><h2 style="text-align:center; color:#202358">Computed Tomography (CT)</h2></div>
     <div class="section group">
         <div class="col span_4_of_12">
-            A CT scan makes use of computer-processed combinations of many X-ray images taken from different angles to produce cross-sectional (tomographic) images (virtual "slices") of specific areas of a scanned object, allowing the user to see inside the object without cutting.
+            <img src="imgs/ct1.jpg" style="width:50%">
+        </div>
+        <div class="col span_4_of_12">
+            <p style="margin-left:10px;margin-right:10px;">CT scan makes use of computer-processed combinations of many X-ray images taken from different angles to produce cross-sectional (tomographic) images (virtual "slices") of specific areas of a scanned object, allowing the user to see inside the object without cutting.
             Digital geometry processing is used to generate a three-dimensional image of the inside of the object from a large series of two-dimensional radiographic images taken around a single axis of rotation.[2] Medical imaging is the most common application of X-ray CT. Its cross-sectional images are used for diagnostic and therapeutic purposes in various medical disciplines.[3] The rest of this article discusses medical-imaging X-ray CT; industrial applications of X-ray CT are discussed at industrial computed tomography scanning.
-        </div>
+        </p></div>
         <div class="col span_4_of_12">
             <h2>Centre Available:</h2>
             <a href="centres.html#EH">Causeway Bay</a>
         </div>
-
-        <div class="col span_4_of_12">
-            <div class="w3-content w3-section" style="max-width:100%">
-                <img class="mySlides2 w3-animate-fading" src="imgs/ct1.jpg" style="width:100%">
-                <img class="mySlides2 w3-animate-fading" src="imgs/ct2.jpg" style="width:100%">
-            </div>
-        </div>
-        <script>
-            var myIndex = 0;
-            carousel();
-
-            function carousel() {
-                var i;
-                var x = document.getElementsByClassName("mySlides2");
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";
-                }
-                myIndex++;
-                if (myIndex > x.length) { myIndex = 1 }
-                x[myIndex - 1].style.display = "block";
-                setTimeout(carousel, 3000); // Change image every 2 seconds
-            }
-        </script>
-    </div>
     </div>
 
 
-
-    <footer>
-        ©Copyright. Hercules Medical Diagnostic & Laboratory Group Limited 2016. All Rights Reserved.
-    </footer>
+        <footer>
+            ©Copyright. Hercules Medical Diagnostic & Laboratory Group Limited 2016. All Rights Reserved.
+        </footer>
 
 </body>
 </html>
