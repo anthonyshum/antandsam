@@ -529,3 +529,12 @@ fieldset {
 	outline:0;
 	border:1px solid #999;
 }
+
+.material {
+    margin:auto;
+    text-align:center;
+}
+
+h2 {
+    color:#308d9b;
+}
