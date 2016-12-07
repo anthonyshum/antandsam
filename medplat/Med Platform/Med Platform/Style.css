@@ -317,21 +317,14 @@ footer {
     padding: 10px 10px 10px 10px;
 }
 
-#ehmap {
+.centremap {
         height:300px;
-        width:100%;
+        width:80%;
+        margin:auto;
+        margin-top:20px;
+        border:2px solid black;
 }
 
-#chmap {
-        height:300px;
-        width:100%;
-}
-
-
-#ktmap {
-        height:300px;
-        width:100%;
-}
 
 #servicesava {
     list-style-type: none;
@@ -347,8 +340,9 @@ footer {
 
 .servicesava {
     margin-top:-2px;
+    margin-left:35%;
     text-decoration:none;
-        color:cadetblue;
+    color:cadetblue;
 }
 
 
@@ -356,11 +350,6 @@ footer {
     text-decoration:none;
     color:cadetblue;
 }
-
-.marginleft {
-    margin-left:10px;
-}
-
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
 
