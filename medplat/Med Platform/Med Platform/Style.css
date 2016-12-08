@@ -1,138 +1,153 @@
 ﻿body {
-    font-family:Arial;
+    font-family: Arial;
 }
 
 .section {
-	clear: both;
-	padding: 0px;
-	margin: 0px;
+    clear: both;
+    padding: 0px;
+    margin: 0px;
 }
 
 .col {
-	display: block;
-	float:left;
-	margin: 1% 0 1% 0%;
+    display: block;
+    float: left;
+    margin: 1% 0 1% 0%;
 }
-.col:first-child { margin-left: 0; }
+
+    .col:first-child {
+        margin-left: 0;
+    }
 
 .group:before,
-.group:after { content:""; display:table; }
-.group:after { clear:both;}
-.group { zoom:1; }
+.group:after {
+    content: "";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.group {
+    zoom: 1;
+}
 
 .span_12_of_12 {
-	width: 100%;
+    width: 100%;
 }
 
 .span_11_of_12 {
-  	width: 91.66%;
+    width: 91.66%;
 }
+
 .span_10_of_12 {
-  	width: 83.33%;
+    width: 83.33%;
 }
 
 .span_9_of_12 {
-  	width: 75%;
+    width: 75%;
 }
 
 .span_8_of_12 {
-  	width: 66.66%;
+    width: 66.66%;
 }
 
 .span_7_of_12 {
-  	width: 58.33%;
+    width: 58.33%;
 }
 
 .span_6_of_12 {
-  	width: 50%;
+    width: 50%;
 }
 
 .span_5_of_12 {
-  	width: 41.66%;
+    width: 41.66%;
 }
 
 .span_4_of_12 {
-  	width: 33.33%;
+    width: 33.33%;
 }
 
 .span_3_of_12 {
-  	width: 25%;
+    width: 25%;
 }
 
 .span_2_of_12 {
-  	width: 16.66%;
+    width: 16.66%;
 }
 
 .span_1_of_12 {
-  	width: 8.333%;
+    width: 8.333%;
 }
 
 @media only screen and (max-width: 880px) {
-	.col {  margin: 1% 0 1% 0%; }
-        
+    .col {
+        margin: 1% 0 1% 0%;
+    }
+
     .span_1_of_12, .span_2_of_12, .span_3_of_12, .span_4_of_12, .span_5_of_12, .span_6_of_12, .span_7_of_12, .span_8_of_12, .span_9_of_12, .span_10_of_12, .span_11_of_12, .span_12_of_12 {
-	width: 100%; 
-	}
+        width: 100%;
+    }
 }
 
 #companyname {
-    position:fixed;
-    top:0px;
-    left:0px;
-    z-index:1;
+    position: fixed;
+    top: 5px;
+    left: 2%;
+    z-index: 1;
 }
 
 #langbar {
-    position:fixed;
-    top:15px;
-    right:0px;
-    z-index:1;
+    position: fixed;
+    top: 15px;
+    right: 0px;
+    z-index: 1;
 }
 
 #cover {
-    position:fixed;
-    top:-8px;
-    left:0px;
-    width:100%;
-    height:80px;
-    background-color:#ffffff;
-    z-index:1;
+    position: fixed;
+    top: -8px;
+    left: 0px;
+    width: 100%;
+    height: 80px;
+    background-color: #ffffff;
+    z-index: 1;
 }
 
 #lang {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    text-align:right;
+    text-align: right;
     overflow: hidden;
     margin-top: -16px;
-    float:right;
-    background-color:#ffffff;
+    float: right;
+    background-color: #ffffff;
 }
 
-#lang > .lan {
-    font-size:smaller;
-    display:inline-block;
-    text-decoration:none;
-    color:#383d76;
-    list-style-type: none;
-    border-left: 1px solid #ccc;
-    margin:-5px -1px -5px -1px;
-}
+    #lang > .lan {
+        font-size: smaller;
+        display: inline-block;
+        text-decoration: none;
+        color: #383d76;
+        list-style-type: none;
+        border-left: 1px solid #ccc;
+        margin: -5px -1px -5px -1px;
+    }
 
-#lang > .lan > a {
-    font-size:smaller;
-    display:inline-block;
-    text-decoration:none;
-    color:#383d76;
-    list-style-type: none;
-    border-left: 1px solid #ccc;
-    margin:-5px -1px -5px -1px;
-}
+        #lang > .lan > a {
+            font-size: smaller;
+            display: inline-block;
+            text-decoration: none;
+            color: #383d76;
+            list-style-type: none;
+            border-left: 1px solid #ccc;
+            margin: -5px -1px -5px -1px;
+        }
 
-#lang > .lan > a:hover {
-  background-color:aliceblue;
-}
+            #lang > .lan > a:hover {
+                background-color: aliceblue;
+            }
 
 .main {
     list-style-type: none;
@@ -142,9 +157,9 @@
     background-color: #383d76;
 }
 
-.main > li {
-    float: left;
-}
+    .main > li {
+        float: left;
+    }
 
 li a, .dropbtn {
     display: inline-block;
@@ -154,9 +169,9 @@ li a, .dropbtn {
     text-decoration: none;
 }
 
-li a:hover, .dropdown:hover .dropbtn {
-    background-color: #666a97;
-}
+    li a:hover, .dropdown:hover .dropbtn {
+        background-color: #666a97;
+    }
 
 li.dropdown {
     display: inline-block;
@@ -170,112 +185,119 @@ li.dropdown {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
 #fixednav {
-    position:fixed;
-    top:70px;
-    width:100%;
-    z-index:1;
-    }
+    position: fixed;
+    top: 70px;
+    width: 100%;
+    z-index: 1;
+}
 
 .main > li:last-child {
     float: right;
-    margin-right:10px;
+    margin-right: 10px;
 }
 
 @media only screen and (max-width: 880px) {
-        #langbar {
+    #langbar {
         position: absolute;
         top: 10px;
         right: 0px;
-        z-index:1;
+        z-index: 1;
     }
+
     #companyname {
-    position:absolute;
-    top:8px;
-    left:0px;
-}
+        position: absolute;
+        top: 8px;
+        left: 2%;
+    }
+
     #cover {
-    position:absolute;
-    top:-8px;
-    left:0px;
-    width:100%;
-    height:80px;
-    background-color:#ffffff;
-    z-index:1;
-}
-#fixednav {
-        position:absolute;
-        top:70px;
+        position: absolute;
+        top: -8px;
+        left: 0px;
+        width: 100%;
+        height: 80px;
+        background-color: #ffffff;
+        z-index: 1;
+    }
+
+    #fixednav {
+        position: absolute;
+        top: 70px;
     }
 
     .main {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #383d76;
-}
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #383d76;
+    }
 
-.main > li {
-    float: left;
-    font-size:10px;
-}
+        .main > li {
+            float: left;
+            font-size: 10px;
+        }
 
-.main > li:last-child {
-    float: right;
-}
+            .main > li:last-child {
+                float: right;
+            }
 
-li a, .dropbtn {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 5px 5px;
-    text-decoration: none;
-}
+    li a, .dropbtn {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 5px 5px;
+        text-decoration: none;
+    }
 
-li a:hover, .dropdown:hover .dropbtn {
-    background-color: #666a97;
-}
+        li a:hover, .dropdown:hover .dropbtn {
+            background-color: #666a97;
+        }
 
-li.dropdown {
-    display: inline-block;
-}
+    li.dropdown {
+        display: inline-block;
+    }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    margin-right:50px;
-    background-color: #f9f9f9;
-    min-width: 100%;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        margin-right: 50px;
+        background-color: #f9f9f9;
+        min-width: 100%;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
 
-.dropdown-content a {
-    color: black;
-    padding: 5px 5px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
+        .dropdown-content a {
+            color: black;
+            padding: 5px 5px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+            .dropdown-content a:hover {
+                background-color: #f1f1f1;
+            }
 
-.dropdown:hover .dropdown-content {
-    display: block;
+    .dropdown:hover .dropdown-content {
+        display: block;
     }
 }
 
@@ -296,16 +318,16 @@ li.dropdown {
 }
 
 #contentfirstrow {
-    margin-top:120px;
+    margin-top: 120px;
 }
 
 
 footer {
-    background-color:#4e538b;
-    text-align:center;
+    background-color: #4e538b;
+    text-align: center;
     color: white;
     padding: 20px 0px 20px 0px;
-    margin-top:20px;
+    margin-top: 20px;
 }
 
 #mriin {
@@ -313,11 +335,11 @@ footer {
 }
 
 .centremap {
-        height:300px;
-        width:80%;
-        margin:auto;
-        margin-top:20px;
-        border:2px solid black;
+    height: 300px;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    border: 2px solid black;
 }
 
 
@@ -329,229 +351,245 @@ footer {
     background-color: #383d76;
 }
 
-#servicesava > li {
-    float: left;
-}
+    #servicesava > li {
+        float: left;
+    }
 
 .servicesava {
-    margin-top:-2px;
-    margin-left:35%;
-    text-decoration:none;
-    color:cadetblue;
+    margin-top: -2px;
+    margin-left: 28%;
+    text-decoration: none;
+    color: cadetblue;
 }
 
 
-.servicesava a {
-    text-decoration:none;
-    color:cadetblue;
-}
+    .servicesava a {
+        text-decoration: none;
+        color: cadetblue;
+    }
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
 
 
 #container {
-	width:100%;
-    margin-top:-25px;
+    width: 100%;
+    margin-top: -25px;
 }
 
-#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] {
+    font: 400 12px/16px "Open Sans", Helvetica, Arial, sans-serif;
+}
 
 #contact {
-	background:#eaeaf0;
-    padding-left:10px;
-    padding-right:30px;
-    padding-top:10px;
-    padding-bottom:10px;
-	margin:50px 0;
+    background: #eaeaf0;
+    padding-left: 10px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 50px 0;
 }
 
-#contact h3 {
-	color: #F96;
-	display: block;
-	font-size: 30px;
-	font-weight: 400;
-}
+    #contact h3 {
+        color: #F96;
+        display: block;
+        font-size: 30px;
+        font-weight: 400;
+    }
 
-#contact h4 {
-	margin:5px 0 15px;
-	display:block;
-	font-size:13px;
-}
+    #contact h4 {
+        margin: 5px 0 15px;
+        display: block;
+        font-size: 13px;
+    }
 
 fieldset {
-	border: medium none !important;
-	margin: 0 0 10px;
-	min-width: 100%;
-	padding: 0;
-	width: 100%;
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
 }
 
 #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
-	width:100%;
-	border:1px solid #CCC;
-	background:#FFF;
-	margin:0 0 5px;
-	padding:10px;
+    width: 100%;
+    border: 1px solid #CCC;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
 }
 
-#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
-	-webkit-transition:border-color 0.3s ease-in-out;
-	-moz-transition:border-color 0.3s ease-in-out;
-	transition:border-color 0.3s ease-in-out;
-	border:1px solid #AAA;
-}
+    #contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
+        -webkit-transition: border-color 0.3s ease-in-out;
+        -moz-transition: border-color 0.3s ease-in-out;
+        transition: border-color 0.3s ease-in-out;
+        border: 1px solid #AAA;
+    }
 
 #contact textarea {
-	height:100px;
-	max-width:100%;
-  resize:none;
+    height: 100px;
+    max-width: 100%;
+    resize: none;
 }
 
 #contact button[type="submit"] {
-	cursor:pointer;
-	width:100%;
-	border:none;
-	background:#0CF;
-	color:#FFF;
-	margin-left:10px;
-	padding:5px;
-    font-weight:900;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: #0CF;
+    color: #FFF;
+    margin-left: 10px;
+    padding: 5px;
+    font-weight: 900;
 }
 
 
-#contact button[type="submit"]:hover {
-	background:#09C;
-	-webkit-transition:background 0.3s ease-in-out;
-	-moz-transition:background 0.3s ease-in-out;
-	transition:background-color 0.3s ease-in-out;
-}
+    #contact button[type="submit"]:hover {
+        background: #09C;
+        -webkit-transition: background 0.3s ease-in-out;
+        -moz-transition: background 0.3s ease-in-out;
+        transition: background-color 0.3s ease-in-out;
+    }
 
-#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+    #contact button[type="submit"]:active {
+        box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+    }
 
 #contact input:focus, #contact textarea:focus {
-	outline:0;
-	border:1px solid #999;
+    outline: 0;
+    border: 1px solid #999;
 }
+
 ::-webkit-input-placeholder {
- color:#888;
+    color: #888;
 }
+
 :-moz-placeholder {
- color:#888;
+    color: #888;
 }
+
 ::-moz-placeholder {
- color:#888;
+    color: #888;
 }
+
 :-ms-input-placeholder {
- color:#888;
+    color: #888;
 }
 
 #login-container {
-    margin:0 auto;  
-    width:400px;
-    margin-top:-25px;
+    margin: 0 auto;
+    width: 400px;
+    margin-top: -25px;
 }
 
-#login-form input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+#login-form input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] {
+    font: 400 12px/16px "Open Sans", Helvetica, Arial, sans-serif;
+}
 
 #login-form {
-	background:#eaeaf0;
-    padding-left:10px;
-    padding-right:30px;
-    padding-top:10px;
-    padding-bottom:10px;
-	margin:50px 0;
+    background: #eaeaf0;
+    padding-left: 10px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 50px 0;
 }
 
-#login-form h3 {
-	color: #F96;
-	display: block;
-	font-size: 30px;
-	font-weight: 400;
-}
+    #login-form h3 {
+        color: #F96;
+        display: block;
+        font-size: 30px;
+        font-weight: 400;
+    }
 
-#login-form h4 {
-	margin:5px 0 15px;
-	display:block;
-	font-size:13px;
-}
+    #login-form h4 {
+        margin: 5px 0 15px;
+        display: block;
+        font-size: 13px;
+    }
 
 fieldset {
-	border: medium none !important;
-	margin: 0 0 10px;
-	min-width: 100%;
-	padding: 0;
-	width: 100%;
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
 }
 
 #login-form input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
-	width:100%;
-	border:1px solid #CCC;
-	background:#FFF;
-	margin:0 0 5px;
-	padding:10px;
+    width: 100%;
+    border: 1px solid #CCC;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
 }
 
-#login-form input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
-	-webkit-transition:border-color 0.3s ease-in-out;
-	-moz-transition:border-color 0.3s ease-in-out;
-	transition:border-color 0.3s ease-in-out;
-	border:1px solid #AAA;
-}
+    #login-form input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
+        -webkit-transition: border-color 0.3s ease-in-out;
+        -moz-transition: border-color 0.3s ease-in-out;
+        transition: border-color 0.3s ease-in-out;
+        border: 1px solid #AAA;
+    }
 
 #login-form button[type="submit"] {
-	cursor:pointer;
-	width:100%;
-	border:none;
-	background:#0CF;
-	color:#FFF;
-	margin-left:10px;
-    margin-top:10px;
-	padding:10px;
-	font-size:15px;
-
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: #0CF;
+    color: #FFF;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 15px;
 }
 
-#login-form button[type="submit"]:hover {
-	background:#09C;
-	-webkit-transition:background 0.3s ease-in-out;
-	-moz-transition:background 0.3s ease-in-out;
-	transition:background-color 0.3s ease-in-out;
-}
+    #login-form button[type="submit"]:hover {
+        background: #09C;
+        -webkit-transition: background 0.3s ease-in-out;
+        -moz-transition: background 0.3s ease-in-out;
+        transition: background-color 0.3s ease-in-out;
+    }
 
-#login-form button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+    #login-form button[type="submit"]:active {
+        box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+    }
 
 #login-form input:focus, #contact textarea:focus {
-	outline:0;
-	border:1px solid #999;
+    outline: 0;
+    border: 1px solid #999;
 }
 
 .material {
-    margin:auto;
-    text-align:center;
+    margin: auto;
+    text-align: center;
 }
 
 h2 {
-    color:#308d9b;
+    color: #308d9b;
 }
 
 .newsupdate {
-    text-decoration:none;
-    color:cadetblue;
+    text-decoration: none;
+    color: cadetblue;
 }
 
 
-.newsupdate a {
-    text-decoration:none;
-    color:cadetblue;
-}
+    .newsupdate a {
+        text-decoration: none;
+        color: cadetblue;
+    }
 
 .career {
-    text-decoration:none;
-    color:cadetblue;
+    text-decoration: none;
+    color: cadetblue;
 }
 
 
-.career a {
-    text-decoration:none;
-    color:cadetblue;
+    .career a {
+        text-decoration: none;
+        color: cadetblue;
+    }
+
+.profdr {
+    max-width: 300px;
+    margin-right: 5%;
 }

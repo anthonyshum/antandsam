@@ -100,6 +100,7 @@
     <Content Include="contactus.html" />
     <Content Include="dl.html" />
     <Content Include="imgs\centrelocation.jpg" />
+    <Content Include="imgs\Company header.png" />
     <Content Include="imgs\ct1.jpg" />
     <Content Include="imgs\ct2.jpg" />
     <Content Include="imgs\logo.png" />
@@ -122,6 +123,7 @@
     <Content Include="imgs\Price List 201607.pdf" />
     <Content Include="imgs\centrelocation.pdf" />
     <Content Include="imgs\Price List 201607blank.pdf" />
+    <Content Include="imgs\Request Form 2016.pdf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -132,6 +134,7 @@
   <ItemGroup>
     <Content Include="Home.html" />
     <Content Include="prof.html" />
+    <Content Include="imgs\Request Form 2016.jpg" />
     <Content Include="services.html" />
     <Content Include="storage.css" />
     <Content Include="storage.html" />

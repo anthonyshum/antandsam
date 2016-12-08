@@ -6,40 +6,39 @@
     <link href="Style.css" rel="stylesheet" />
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script>
-    var onloadCallback = function () {
-        grecaptcha.render('dvCaptcha', {
-            'sitekey': '<%=ReCaptcha_Key %>',
-            'callback': function (response) {
-                $.ajax({
-                    type: "POST",
-                    url: "CS.aspx/VerifyCaptcha",
-                    data: "{response: '" + response + "'}",
-                    contentType: "application/json; charset=utf-8",
-                    dataType: "json",
-                    success: function (r) {
-                        var captchaResponse = jQuery.parseJSON(r.d);
-                        if (captchaResponse.success) {
-                            $("[id*=txtCaptcha]").val(captchaResponse.success);
-                            $("[id*=lblAlarm]").hide();
-                        } else {
-                            $("[id*=txtCaptcha]").val("");
-                            $("[id*=lblAlarm]").show();
-                            var error = captchaResponse["error-codes"][0];
-                            $("[id*=lblAlarm]").html("RECaptcha error. " + error);
+        var onloadCallback = function () {
+            grecaptcha.render('dvCaptcha', {
+                'sitekey': '<%=ReCaptcha_Key %>',
+                'callback': function (response) {
+                    $.ajax({
+                        type: "POST",
+                        url: "CS.aspx/VerifyCaptcha",
+                        data: "{response: '" + response + "'}",
+                        contentType: "application/json; charset=utf-8",
+                        dataType: "json",
+                        success: function (r) {
+                            var captchaResponse = jQuery.parseJSON(r.d);
+                            if (captchaResponse.success) {
+                                $("[id*=txtCaptcha]").val(captchaResponse.success);
+                                $("[id*=lblAlarm]").hide();
+                            } else {
+                                $("[id*=txtCaptcha]").val("");
+                                $("[id*=lblAlarm]").show();
+                                var error = captchaResponse["error-codes"][0];
+                                $("[id*=lblAlarm]").html("RECaptcha error. " + error);
+                            }
                         }
-                    }
-                });
-            }
-        });
-    };
+                    });
+                }
+            });
+        };
     </script>
 </head>
 <body>
     <div id="cover"></div>
-    <div id="companyname"><a href="Home.html"><img src="imgs/logo.png" style="width:100%;height:auto;" /></a></div>
+    <div id="companyname"><a href="Home.html"><img src="imgs/Company header.png" style="width:100%;height:auto;max-width:491px;" /></a></div>
     <div id="langbar">
         <ul id="lang">
-            <li class="lan"><a href="Home.html">Eng</a></li>
             <li class="lan"><a href="chome.html">繁</a></li>
             <li class="lan"><a href="schome.html">簡</a></li>
         </ul>
@@ -121,4 +120,3 @@
 
 </body>
 </html>
-
