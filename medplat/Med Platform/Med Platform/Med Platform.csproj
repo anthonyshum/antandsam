@@ -94,6 +94,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="careers.html" />
     <Content Include="imgs\bluecare.png" />
     <Content Include="centres.html" />
     <Content Include="contactus.html" />
@@ -108,10 +109,11 @@
     <Content Include="imgs\IMG_0249.JPG" />
     <Content Include="imgs\mri1.jpg" />
     <Content Include="imgs\mri2.jpg" />
-    <Content Include="JavaScript.js" />
+    <Content Include="imgs\serv.jpg" />
     <Content Include="login.html" />
     <Content Include="Nav and footer.css" />
     <Content Include="Nav and footer.html" />
+    <Content Include="news.html" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -119,6 +121,7 @@
     <Content Include="imgs\BLUE CAREdd.pdf" />
     <Content Include="imgs\Price List 201607.pdf" />
     <Content Include="imgs\centrelocation.pdf" />
+    <Content Include="imgs\Price List 201607blank.pdf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -128,6 +131,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Home.html" />
+    <Content Include="prof.html" />
     <Content Include="services.html" />
     <Content Include="storage.css" />
     <Content Include="storage.html" />
