@@ -1,5 +1,6 @@
 ﻿body {
     font-family: Arial;
+    margin:0;
 }
 
 .section {
@@ -615,4 +616,8 @@ h2 {
     width: 90%;
     margin-top: 20px;
     border: 2px solid black;
+}
+
+.careerdetail {
+    margin-left:7%;
 }

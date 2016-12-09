@@ -4,6 +4,7 @@
     <title>Hercules Medical Diagnostic & Laboratory Group Limited</title>
     <meta charset="utf-8" />
     <link href="Style.css" rel="stylesheet" />
+    <script src="jquery-3.1.1.js"></script>
 </head>
 <body>
     <div id="cover"></div>
@@ -52,77 +53,106 @@
     <h1 style="padding-top:10px;text-align:center;color:#202358">Careers</h1>
     <div class="section group">
         <div class="col span_4_of_12">
-            <div style="margin-left:10%;margin-right:10%;">
-                <h2>Opening Positions</h2>
-                <h3 class="career"><a href="careers.html">Operation Department</a></h3>
-                <p class="career"><a href="careers.html"><b>01/01/2017:</b>Radiographer</a></p>
-                <p class="career"><a href="careers.html#ca"><b>01/01/2016:</b>Clinical Assistant</a></p>
-                <h3 class="career"><a href="careers.html#careerlab">Laboratory Department</a></h3>
-                <p class="career"><a href="careers.html#la"><b>01/01/2017:</b>Laboratory Assistant</a></p>
-                <h3 class="career"><a href="careers.html#careeradmin">Administration Department</a></h3>
-                <p class="career"><a href="careers.html#ac"><b>01/01/2017:</b>Accounts Clerk</a></p>
+            <div style="margin-left:10%;">
+                <img src="imgs/hrpic.png" style="width:100%;height:auto;">
+                Make Hercules Great Again!
             </div>
         </div>
         <div class="col span_8_of_12">
-            <div style="margin-left:10%;margin-right:10%;">
-                <h3 id="careermed" style="color:#202358">Operation Department</h3>
-                <h4>Radiographer</h4>
-                <p><b>Responsibility:</b></p>
-                <p>many responsibility</p>
-                <p>many responsibility</p>
-                <p>many responsibility</p>
-                <p>many responsibility</p>
-                <p><b>Requirement:</b></p>
-                <p>many requirement</p>
-                <p>many requirement</p>
-                <p>many requirement</p>
-                <p>many requirement</p>
-                <p>many requirement</p>
-                <h4 id="ca">Clinical Assistant</h4>
-                <p><b>Responsibility:</b></p>
-                <p>many responsibility</p>
-                <p>many responsibility</p>
-                <p>many responsibility</p>
-                <p>many responsibility</p>
-                <p><b>Requirement:</b></p>
-                <p>many requirement</p>
-                <p>many requirement</p>
-                <p>many requirement</p>
-                <p>many requirement</p>
-                <p>many requirement</p>
+            <h2 style="border-bottom:double;margin-left:10%;margin-right:10%;margin-bottom:0;">Opening Position</h2>
+            <div style="margin-left:10%;margin-right:10%;border-left:solid;border-left-width:1px;border-left-color:#a3a4bd;">
+                <h3 id="careermed" class="careerdetail" style="color:#202358">Operation Department</h3>
+                <h4 class="careerdetail">Radiographer</h4>
+                <button id="careerbutton1" class="contactusmap" style="margin-left:7%;">Click to Show or Hide Detail</button>
+                <div id="Radiographer" style="display:none;">
+                    <p class="careerdetail"><b>Responsibility:</b></p>
+                    <p class="careerdetail">many responsibility</p>
+                    <p class="careerdetail">many responsibility</p>
+                    <p class="careerdetail">many responsibility</p>
+                    <p class="careerdetail">many responsibility</p>
+                    <p class="careerdetail"><b>Requirement:</b></p>
+                    <p class="careerdetail">many requirement</p>
+                    <p class="careerdetail">many requirement</p>
+                    <p class="careerdetail">many requirement</p>
+                    <p class="careerdetail">many requirement</p>
+                    <p class="careerdetail">many requirement</p>
+                </div>
+                <h4 class="careerdetail" id="ca">Clinical Assistant</h4>
+                <button id="careerbutton2" class="contactusmap" style="margin-left:7%;">Click to Show or Hide Detail</button>
+                <div id="clinicalassistant" style="display:none;">
+                    <p class="careerdetail"><b>Responsibility:</b></p>
+                    <p class="careerdetail">many responsibility</p>
+                    <p class="careerdetail">many responsibility</p>
+                    <p class="careerdetail">many responsibility</p>
+                    <p class="careerdetail">many responsibility</p>
+                    <p class="careerdetail"><b>Requirement:</b></p>
+                    <p class="careerdetail">many requirement</p>
+                    <p class="careerdetail">many requirement</p>
+                    <p class="careerdetail">many requirement</p>
+                    <p class="careerdetail">many requirement</p>
+                    <p class="careerdetail">many requirement</p>
+                </div>
                 <hr>
-                <h3 id="careerlab" style="color:#202358">Laboratory Department</h3>
-                <h4 id="la">Laboratory Assistant</h4>
-                <p><b>Responsibility:</b></p>
-                <p>many responsibility</p>
-                <p>many responsibility</p>
-                <p>many responsibility</p>
-                <p>many responsibility</p>
-                <p><b>Requirement:</b></p>
-                <p>many requirement</p>
-                <p>many requirement</p>
-                <p>many requirement</p>
-                <p>many requirement</p>
-                <p>many requirement</p>
+                <h3 class="careerdetail" id="careerlab" style="color:#202358">Laboratory Department</h3>
+                <h4 class="careerdetail" id="la">Laboratory Assistant</h4>
+                <button id="careerbutton3" class="contactusmap" style="margin-left:7%;">Click to Show or Hide Detail</button>
+                <div id="laboratoryassistant" style="display:none;">
+                    <p class="careerdetail"><b>Responsibility:</b></p>
+                    <p class="careerdetail">many responsibility</p>
+                    <p class="careerdetail">many responsibility</p>
+                    <p class="careerdetail">many responsibility</p>
+                    <p class="careerdetail">many responsibility</p>
+                    <p class="careerdetail"><b>Requirement:</b></p>
+                    <p class="careerdetail">many requirement</p>
+                    <p class="careerdetail">many requirement</p>
+                    <p class="careerdetail">many requirement</p>
+                    <p class="careerdetail">many requirement</p>
+                    <p class="careerdetail">many requirement</p>
+                </div>
                 <hr>
-                <h3 id="careeradmin" style="color:#202358">Administration Department</h3>
-                <h4 id="ac">Accounts Clerk</h4>
-                <p><b>Responsibility:</b></p>
-                <p>many responsibility</p>
-                <p>many responsibility</p>
-                <p>many responsibility</p>
-                <p>many responsibility</p>
-                <p><b>Requirement:</b></p>
-                <p>many requirement</p>
-                <p>many requirement</p>
-                <p>many requirement</p>
-                <p>many requirement</p>
-                <p>many requirement</p>
+                <h3 class="careerdetail" id="careeradmin" style="color:#202358">Administration Department</h3>
+                <h4 class="careerdetail" id="ac">Accounts Clerk</h4>
+                <button id="careerbutton4" class="contactusmap" style="margin-left:7%;">Click to Show or Hide Detail</button>
+                <div id="accountsclerk" style="display:none;">
+                    <p class="careerdetail"><b>Responsibility:</b></p>
+                    <p class="careerdetail">many responsibility</p>
+                    <p class="careerdetail">many responsibility</p>
+                    <p class="careerdetail">many responsibility</p>
+                    <p class="careerdetail">many responsibility</p>
+                    <p class="careerdetail"><b>Requirement:</b></p>
+                    <p class="careerdetail">many requirement</p>
+                    <p class="careerdetail">many requirement</p>
+                    <p class="careerdetail">many requirement</p>
+                    <p class="careerdetail">many requirement</p>
+                    <p class="careerdetail">many requirement</p>
+                </div>
                 <hr>
             </div>
         </div>
     </div>
     <div style="margin-left:10%;margin-right:10%;">Interested candidate, please send all relevent certificates and resume soft copy to <b>hr@herculesgroup.com.hk</b>.</div>
+    <script>
+        $(document).ready(function () {
+            $("#careerbutton1").click(function () {
+                $("#Radiographer").toggle();
+            });
+        });
+        $(document).ready(function () {
+            $("#careerbutton2").click(function () {
+                $("#clinicalassistant").toggle();
+            });
+        });
+        $(document).ready(function () {
+            $("#careerbutton3").click(function () {
+                $("#laboratoryassistant").toggle();
+            });
+        });
+        $(document).ready(function () {
+            $("#careerbutton4").click(function () {
+                $("#accountsclerk").toggle();
+            });
+        });
+    </script>
     <footer>
         ©Copyright. Hercules Medical Diagnostic & Laboratory Group Limited 2016. All Rights Reserved.
     </footer>
