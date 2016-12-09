@@ -4,6 +4,7 @@
     <title>Hercules Medical Diagnostic & Laboratory Group Limited</title>
     <meta charset="utf-8" />
     <link href="Style.css" rel="stylesheet" />
+    <script src="jquery-3.1.1.js"></script>
 </head>
 <body>
     <div id="cover"></div>
@@ -50,35 +51,107 @@
     </div>
     <div id="contentfirstrow"></div>
     <h1 style="padding-top:10px;text-align:center;color:#202358">What's New</h1>
-
-
-
     <div class="section group">
         <div class="col span_4_of_12">
-            <div style="margin-left:10%;margin-right:10%;">
-                <h2>Updates</h2>
-                <p class="newsupdate"><a href="news.html"><b>01/01/2017:</b> Ultrasound Services at Kwun Tong Centre</a></p>
-                <p class="newsupdate"><a href="news.html#hhctr"><b>01/01/2016:</b> New Centre Opening - Hung Hom</a></p>
+            <div style="margin-left:10%;">
+                <h2>List</h2>
+                <div>
+                    <p><b>Date:</b> 1st December, 2017</p>
+                    <p><b>News:</b> Hung Hom Centre Grand Opening</p>
+                </div>
+                <div>
+                    <p><b>Date:</b> 1st December, 2016</p>
+                    <p><b>News:</b> Kwun Tong Centre with Ultrasound Scan Service Available</p>
+                </div>
+                <div>
+                    <p><b>Date:</b> 1st December, 2015</p>
+                    <p><b>News:</b> Hung Hom Centre Grand Opening</p>
+                </div>
+                <div>
+                    <p><b>Date:</b> 1st December, 2015</p>
+                    <p><b>News:</b> Hung Hom Centre Grand Opening</p>
+                </div>
             </div>
         </div>
         <div class="col span_8_of_12">
-            <div id="uskt" style="margin-left:10%;margin-right:10%;">
-                <h2>Ultrasound Services at Kwun Tong Centre</h2>
-                <center><img src="imgs/ct1.jpg" /></center>
-                <p class="newscontent">a lot of bsa lot of bsa lot of bsa lot of bsa lot of bsa lot of bs</p>
-                <p class="newscontent">a lot of bsa lot of bsa lot of bsa lot of bsa lot of bsa lot of bs</p>
-                <p class="newscontent">a lot of bsa lot of bsa lot of bsa lot of bsa lot of bsa lot of bs</p>
-            </div>
-            <div id="hhctr" style="margin-left:10%;margin-right:10%;">
-                <h2>Ultrasound Services at Kwun Tong Centre</h2>
-                <center><img src="imgs/ct1.jpg" /></center>
-                <p class="newscontent">a lot of bsa lot of bsa lot of bsa lot of bsa lot of bsa lot of bs</p>
-                <p class="newscontent">a lot of bsa lot of bsa lot of bsa lot of bsa lot of bsa lot of bs</p>
-                <p class="newscontent">a lot of bsa lot of bsa lot of bsa lot of bsa lot of bsa lot of bs</p>
+            <h2 style="border-bottom:double;margin-left:10%;margin-right:10%;margin-bottom:0;">News Update Detail</h2>
+            <div style="margin-left:10%;margin-right:10%;border-left:solid;border-left-width:1px;border-left-color:#a3a4bd;">
+                <h3 id="careermed" class="careerdetail" style="color:#202358">New Medical diagnostic Centre - Hung Hom Centre</h3>
+                <button id="careerbutton1" class="contactusmap" style="margin-left:7%;">Click to Show or Hide Detail</button>
+                <div id="Radiographer" style="display:none;">
+                    <p class="careerdetail"><b>Responsibility:</b></p>
+                    <p class="careerdetail">many responsibility</p>
+                    <p class="careerdetail">many responsibility</p>
+                    <p class="careerdetail">many responsibility</p>
+                    <p class="careerdetail">many responsibility</p>
+                    <p class="careerdetail"><b>Requirement:</b></p>
+                    <p class="careerdetail">many requirement</p>
+                    <p class="careerdetail">many requirement</p>
+                    <p class="careerdetail">many requirement</p>
+                    <p class="careerdetail">many requirement</p>
+                    <p class="careerdetail">many requirement</p>
+                </div>
+                <hr>
+                <h3 class="careerdetail" id="careerlab" style="color:#202358">Laboratory Department</h3>
+                <h4 class="careerdetail" id="la">Laboratory Assistant</h4>
+                <button id="careerbutton3" class="contactusmap" style="margin-left:7%;">Click to Show or Hide Detail</button>
+                <div id="laboratoryassistant" style="display:none;">
+                    <p class="careerdetail"><b>Responsibility:</b></p>
+                    <p class="careerdetail">many responsibility</p>
+                    <p class="careerdetail">many responsibility</p>
+                    <p class="careerdetail">many responsibility</p>
+                    <p class="careerdetail">many responsibility</p>
+                    <p class="careerdetail"><b>Requirement:</b></p>
+                    <p class="careerdetail">many requirement</p>
+                    <p class="careerdetail">many requirement</p>
+                    <p class="careerdetail">many requirement</p>
+                    <p class="careerdetail">many requirement</p>
+                    <p class="careerdetail">many requirement</p>
+                </div>
+                <hr>
+                <h3 class="careerdetail" id="careeradmin" style="color:#202358">Administration Department</h3>
+                <h4 class="careerdetail" id="ac">Accounts Clerk</h4>
+                <button id="careerbutton4" class="contactusmap" style="margin-left:7%;">Click to Show or Hide Detail</button>
+                <div id="accountsclerk" style="display:none;">
+                    <p class="careerdetail"><b>Responsibility:</b></p>
+                    <p class="careerdetail">many responsibility</p>
+                    <p class="careerdetail">many responsibility</p>
+                    <p class="careerdetail">many responsibility</p>
+                    <p class="careerdetail">many responsibility</p>
+                    <p class="careerdetail"><b>Requirement:</b></p>
+                    <p class="careerdetail">many requirement</p>
+                    <p class="careerdetail">many requirement</p>
+                    <p class="careerdetail">many requirement</p>
+                    <p class="careerdetail">many requirement</p>
+                    <p class="careerdetail">many requirement</p>
+                </div>
+                <hr>
             </div>
         </div>
     </div>
-
+    <div style="margin-left:10%;margin-right:10%;">Interested candidate, please send all relevent certificates and resume soft copy to <b>hr@herculesgroup.com.hk</b>.</div>
+    <script>
+        $(document).ready(function () {
+            $("#careerbutton1").click(function () {
+                $("#Radiographer").toggle();
+            });
+        });
+        $(document).ready(function () {
+            $("#careerbutton2").click(function () {
+                $("#clinicalassistant").toggle();
+            });
+        });
+        $(document).ready(function () {
+            $("#careerbutton3").click(function () {
+                $("#laboratoryassistant").toggle();
+            });
+        });
+        $(document).ready(function () {
+            $("#careerbutton4").click(function () {
+                $("#accountsclerk").toggle();
+            });
+        });
+    </script>
     <footer>
         ©Copyright. Hercules Medical Diagnostic & Laboratory Group Limited 2016. All Rights Reserved.
     </footer>
