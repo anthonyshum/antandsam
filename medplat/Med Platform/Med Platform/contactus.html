@@ -59,20 +59,26 @@
                 <p style="font-weight:bold">Address:</p>
                 <p>Shop 22, G/F, Elizabeth House, 250-254 Gloucester Road, <br>Causeway Bay, H.K.</p>
                 <p><b>Tel:</b> 2893 2819<br><b>Fax:</b> 2893 2309</p>
-                <button id="contactusehmap" class="contactusmap">Click to Show Map</button>
-                <div id="ehmap" class="centremap" style="display:none;"></div>
+                <button id="contactusehmap" class="contactusmap">Click to Show or Hide Map</button>
+                <div id="ehmap" class="contactusgmap"></div>
                 <h2><a href="centres.html#CH" style="text-decoration:none;color:#308d9b">Jordan Centre</a></h2>
                 <p style="font-weight:bold">Address:</p>
                 <p>Room 913A, Champion Building, 301-309 Nathan Road, <br>Jordan, Kowloon</p>
                 <p><b>Tel:</b> 3523 1151<br><b>Fax:</b> 3523 1152</p>
+                <button id="contactuschmap" class="contactusmap">Click to Show or Hide Map</button>
+                <div id="chmap" class="contactusgmap"></div>
                 <h2><a href="centres.html#KT" style="text-decoration:none;color:#308d9b">Kwun Tong Centre</a></h2>
                 <p style="font-weight:bold">Address:</p>
                 <p>Room 2002, 20/F, Entreprot Centre, 117 How Ming Street, <br>Kwun Tong, Kowloon</p>
                 <p><b>Tel:</b> 3162 3982<br><b>Fax:</b> 3162 3985</p>
+                <button id="contactusktmap" class="contactusmap">Click to Show or Hide Map</button>
+                <div id="ktmap" class="contactusgmap"></div>
                 <h2><a href="centres.html#HT" style="text-decoration:none;color:#308d9b">Laboratory</a></h2>
                 <p style="font-weight:bold">Address:</p>
                 <p>Room 1503, Hon Kwok Jordan Centre, 7 Hillwood Road,<br>Tsim Sha Tsui, Kowloon</p>
                 <p><b>Tel:</b> 2904 7808<br><b>Fax:</b> 2904 7008</p>
+                <button id="contactushtmap" class="contactusmap">Click to Show or Hide Map</button>
+                <div id="htmap" class="contactusgmap"></div>
                 <h2 id="contactusmar" style="text-decoration:none;color:#308d9b">Marketing Dept.</h2>
                 <p>Mr. Andy Lee</p>
                 <p><b>Tel:</b> 2904 7808<br><b>Fax:</b> 2904 7008</p>
@@ -182,6 +188,24 @@
                 $("#ehmap").toggle();
             });
         });
+        $(document).ready(function () {
+            $("#contactuschmap").click(function () {
+                $("#chmap").toggle();
+            });
+        });
+        $(document).ready(function () {
+            $("#contactusktmap").click(function () {
+                $("#ktmap").toggle();
+            });
+        });
+        $(document).ready(function () {
+            $("#contactushtmap").click(function () {
+                $("#htmap").toggle();
+            });
+        });
+
+
+
     </script>
 
     <script async defer
