@@ -4,10 +4,11 @@
     <title>Hercules Medical Diagnostic & Laboratory Group Limited</title>
     <meta charset="utf-8" />
     <link href="Style.css" rel="stylesheet" />
+    <script src="jquery-3.1.1.js"></script>
 </head>
 <body>
     <div id="cover"></div>
-    <div id="companyname"><a href="Home.html"><img src="imgs/logo.png" style="width:100%;height:auto;" /></a></div>
+    <div id="companyname"><a href="Home.html"><img src="imgs/Company header.png" style="width:100%;height:auto;max-width:491px;" /></a></div>
     <div id="langbar">
         <ul id="lang">
             <li class="lan"><a href="chome.html">繁</a></li>
@@ -58,6 +59,8 @@
                 <p style="font-weight:bold">Address:</p>
                 <p>Shop 22, G/F, Elizabeth House, 250-254 Gloucester Road, <br>Causeway Bay, H.K.</p>
                 <p><b>Tel:</b> 2893 2819<br><b>Fax:</b> 2893 2309</p>
+                <button id="contactusehmap" class="contactusmap">Click to Show Map</button>
+                <div id="ehmap" class="centremap" style="display:none;"></div>
                 <h2><a href="centres.html#CH" style="text-decoration:none;color:#308d9b">Jordan Centre</a></h2>
                 <p style="font-weight:bold">Address:</p>
                 <p>Room 913A, Champion Building, 301-309 Nathan Road, <br>Jordan, Kowloon</p>
@@ -81,7 +84,6 @@
                 <p><b>Tel:</b> 2904 7808<br><b>Fax:</b> 2904 7008</p>
             </div>
         </div>
-
         <div class="col span_6_of_12">
             <div id="container">
                 <form id="contact" style="margin-left:10%;margin-right:10%;" action="" method="post">
@@ -115,6 +117,75 @@
         function myFunction() {
             alert("Thank you for your enquiries, we will get back to you soon!");
         }
+    </script>
+    <script>
+        var ehmap = { lat: 22.280865, lng: 114.181220 };
+        var chmap = { lat: 22.305596, lng: 114.171365 };
+        var ktmap = { lat: 22.311566, lng: 114.224580 };
+        var htmap = { lat: 22.302899, lng: 114.172483 };
+
+        function initMap() {
+            var myLatLng = { lat: 22.280865, lng: 114.181220 };
+
+            var map1 = new google.maps.Map(document.getElementById('ehmap'), {
+                zoom: 17,
+                center: ehmap
+            });
+
+            var marker1 = new google.maps.Marker({
+                position: ehmap,
+                map: map1,
+                title: 'Causeway Bay Centre'
+            });
+
+
+
+            var map2 = new google.maps.Map(document.getElementById('chmap'), {
+                zoom: 17,
+                center: chmap
+            });
+
+            var marker2 = new google.maps.Marker({
+                position: chmap,
+                map: map2,
+                title: 'Jordan Centre'
+            });
+
+
+            var map3 = new google.maps.Map(document.getElementById('ktmap'), {
+                zoom: 17,
+                center: ktmap
+            });
+
+            var marker3 = new google.maps.Marker({
+                position: ktmap,
+                map: map3,
+                title: 'Kwun Tong Centre'
+            });
+
+            var map4 = new google.maps.Map(document.getElementById('htmap'), {
+                zoom: 17,
+                center: htmap
+            });
+
+            var marker4 = new google.maps.Marker({
+                position: htmap,
+                map: map4,
+                title: 'Laboratory'
+            });
+
+        }
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#contactusehmap").click(function () {
+                $("#ehmap").toggle();
+            });
+        });
+    </script>
+
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBP_l2m6R9EniSKzsoib6UZTywptgj3DU0&callback=initMap">
     </script>
     <footer>
         ©Copyright. Hercules Medical Diagnostic & Laboratory Group Limited 2016. All Rights Reserved.

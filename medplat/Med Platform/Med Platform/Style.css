@@ -593,3 +593,19 @@ h2 {
     max-width: 300px;
     margin-right: 5%;
 }
+
+.contactusmap {
+    background-color: #308d9b;
+    border: none;
+    color: white;
+    padding: 8px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.contactusmap:hover {
+        background-color: #70abad;
+
+}

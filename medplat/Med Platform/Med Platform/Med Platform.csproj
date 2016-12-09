@@ -111,6 +111,7 @@
     <Content Include="imgs\mri1.jpg" />
     <Content Include="imgs\mri2.jpg" />
     <Content Include="imgs\serv.jpg" />
+    <Content Include="jquery-3.1.1.js" />
     <Content Include="login.html" />
     <Content Include="Nav and footer.css" />
     <Content Include="Nav and footer.html" />
