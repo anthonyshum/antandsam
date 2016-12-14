@@ -17,7 +17,7 @@
     </div>
     <div id="fixednav">
         <ul class="main">
-            <li><a href="Home.html">Home</a></li>
+            <li class="fixednavli"><a href="Home.html">Home</a></li>
             <li class="dropdown">
                 <a href="services.html" class="dropbtn">Serives ></a>
                 <div class="dropdown-content">
@@ -41,12 +41,12 @@
                     <a href="centres.html#HT">Laboratory</a>
                 </div>
             </li>
-            <li><a href="prof.html">Professional Team</a></li>
-            <li><a href="dl.html">Download</a></li>
-            <li><a href="news.html">What's New</a></li>
-            <li><a href="contactus.html">Contact Us</a></li>
-            <li><a href="careers.html">Careers</a></li>
-            <li><a href="login.html">Login</a></li>
+            <li class="fixednavli"><a href="prof.html">Professional Team</a></li>
+            <li class="fixednavli"><a href="dl.html">Download</a></li>
+            <li class="fixednavli"><a href="news.html">What's New</a></li>
+            <li class="fixednavli"><a href="contactus.html">Contact Us</a></li>
+            <li class="fixednavli"><a href="careers.html">Careers</a></li>
+            <li class="fixednavli"><a href="login.html">Login</a></li>
         </ul>
     </div>
     <div id="contentfirstrow"></div>
@@ -77,7 +77,7 @@
             <h2 style="border-bottom:double;margin-left:10%;margin-right:10%;margin-bottom:0;">News Update Detail</h2>
             <div style="margin-left:10%;margin-right:10%;border-left:solid;border-left-width:1px;border-left-color:#a3a4bd;">
                 <h3 id="careermed" class="careerdetail" style="color:#202358">New Medical diagnostic Centre - Hung Hom Centre</h3>
-                <button id="careerbutton1" class="contactusmap" style="margin-left:7%;">Click to Show or Hide Detail</button>
+                <button id="careerbutton1" class="contactusmap" style="margin-left:7%;" onclick="myFunction1()">Click to Show Detail</button>
                 <div id="Radiographer" style="display:none;">
                     <p class="careerdetail"><b>Responsibility:</b></p>
                     <p class="careerdetail">many responsibility</p>
@@ -94,7 +94,7 @@
                 <hr>
                 <h3 class="careerdetail" id="careerlab" style="color:#202358">Laboratory Department</h3>
                 <h4 class="careerdetail" id="la">Laboratory Assistant</h4>
-                <button id="careerbutton3" class="contactusmap" style="margin-left:7%;">Click to Show or Hide Detail</button>
+                <button id="careerbutton2" class="contactusmap" style="margin-left:7%;" onclick="myFunction2()">Click to Show Detail</button>
                 <div id="laboratoryassistant" style="display:none;">
                     <p class="careerdetail"><b>Responsibility:</b></p>
                     <p class="careerdetail">many responsibility</p>
@@ -111,7 +111,7 @@
                 <hr>
                 <h3 class="careerdetail" id="careeradmin" style="color:#202358">Administration Department</h3>
                 <h4 class="careerdetail" id="ac">Accounts Clerk</h4>
-                <button id="careerbutton4" class="contactusmap" style="margin-left:7%;">Click to Show or Hide Detail</button>
+                <button id="careerbutton3" class="contactusmap" style="margin-left:7%;" onclick="myFunction3()">Click to Show Detail</button>
                 <div id="accountsclerk" style="display:none;">
                     <p class="careerdetail"><b>Responsibility:</b></p>
                     <p class="careerdetail">many responsibility</p>
@@ -138,19 +138,43 @@
         });
         $(document).ready(function () {
             $("#careerbutton2").click(function () {
-                $("#clinicalassistant").toggle();
-            });
-        });
-        $(document).ready(function () {
-            $("#careerbutton3").click(function () {
                 $("#laboratoryassistant").toggle();
             });
         });
         $(document).ready(function () {
-            $("#careerbutton4").click(function () {
+            $("#careerbutton3").click(function () {
                 $("#accountsclerk").toggle();
             });
         });
+    </script>
+    <script>
+        function myFunction1() {
+            var change = document.getElementById("careerbutton1");
+            if (change.innerHTML == "Click to Show Detail") {
+                change.innerHTML = "Click to Hide Detail";
+            }
+            else {
+                change.innerHTML = "Click to Show Detail";
+            }
+        }
+        function myFunction2() {
+            var change = document.getElementById("careerbutton2");
+            if (change.innerHTML == "Click to Show Detail") {
+                change.innerHTML = "Click to Hide Detail";
+            }
+            else {
+                change.innerHTML = "Click to Show Detail";
+            }
+        }
+        function myFunction3() {
+            var change = document.getElementById("careerbutton3");
+            if (change.innerHTML == "Click to Show Detail") {
+                change.innerHTML = "Click to Hide Detail";
+            }
+            else {
+                change.innerHTML = "Click to Show Detail";
+            }
+        }
     </script>
     <footer>
         ©Copyright. Hercules Medical Diagnostic & Laboratory Group Limited 2016. All Rights Reserved.

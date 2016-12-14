@@ -16,7 +16,7 @@
     </div>
     <div id="fixednav">
         <ul class="main">
-            <li><a href="Home.html">Home</a></li>
+            <li class="fixednavli"><a href="Home.html">Home</a></li>
             <li class="dropdown">
                 <a href="services.html" class="dropbtn">Serives ></a>
                 <div class="dropdown-content">
@@ -40,15 +40,14 @@
                     <a href="centres.html#HT">Laboratory</a>
                 </div>
             </li>
-            <li><a href="prof.html">Professional Team</a></li>
-            <li><a href="dl.html">Download</a></li>
-            <li><a href="news.html">What's New</a></li>
-            <li><a href="contactus.html">Contact Us</a></li>
-            <li><a href="careers.html">Careers</a></li>
-            <li><a href="login.html">Login</a></li>
+            <li class="fixednavli"><a href="prof.html">Professional Team</a></li>
+            <li class="fixednavli"><a href="dl.html">Download</a></li>
+            <li class="fixednavli"><a href="news.html">What's New</a></li>
+            <li class="fixednavli"><a href="contactus.html">Contact Us</a></li>
+            <li class="fixednavli"><a href="careers.html">Careers</a></li>
+            <li class="fixednavli"><a href="login.html">Login</a></li>
         </ul>
     </div>
-
     <div id="contentfirstrow"></div>
     <h1 style="padding-top:10px;text-align:center;color:#202358">Our Centres</h1>
     <p style="padding:20px;margin-left:20%;margin-right:15%;">Our centres located near MTR station and easy to reach.</p>
@@ -85,8 +84,6 @@
             <p class="servicesava"><a href="services.html#LAB">Laboratory Test</a></p>
         </div>
     </div>
-
-
     <div id="CH"><h2 style="text-align:center; color:#308d9b">Jordan Centre</h2></div>
     <center><img src="imgs/mri2.jpg" style="width:50%;max-width:300px;height:auto;"></center>
     <div class="section group">
@@ -119,8 +116,6 @@
             <p class="servicesava"><a href="services.html#LAB">Laboratory Test</a></p>
         </div>
     </div>
-
-
     <div id="KT"><h2 style="text-align:center; color:#308d9b">Kwun Tong Centre</h2></div>
     <center><img src="imgs/mri2.jpg" style="width:50%;max-width:300px;height:auto;"></center>
     <div class="section group">
@@ -150,7 +145,6 @@
             </div>
         </div>
     </div>
-
     <div id="HT"><h2 style="text-align:center; color:#308d9b">Laboratory</h2></div>
     <center><img src="imgs/mri2.jpg" style="width:50%;max-width:300px;height:auto;"></center>
     <div style="margin-left:20%;margin-right:20%;">Our Office & Laboratory located at Hillwood Road, Tsim Sha Tsui provides diagnostic laboratory testing. </div>
@@ -173,76 +167,54 @@
             <p class="servicesava"><a href="services.html#LAB">Laboratory Test</a></p>
         </div>
     </div>
-
-
     <script>
-
         var ehmap = { lat: 22.280865, lng: 114.181220 };
         var chmap = { lat: 22.305596, lng: 114.171365 };
         var ktmap = { lat: 22.311566, lng: 114.224580 };
         var htmap = { lat: 22.302899, lng: 114.172483 };
-
         function initMap() {
             var myLatLng = { lat: 22.280865, lng: 114.181220 };
-
             var map1 = new google.maps.Map(document.getElementById('ehmap'), {
                 zoom: 17,
                 center: ehmap
             });
-
             var marker1 = new google.maps.Marker({
                 position: ehmap,
                 map: map1,
                 title: 'Causeway Bay Centre'
             });
-
-
-
             var map2 = new google.maps.Map(document.getElementById('chmap'), {
                 zoom: 17,
                 center: chmap
             });
-
             var marker2 = new google.maps.Marker({
                 position: chmap,
                 map: map2,
                 title: 'Jordan Centre'
             });
-
-
             var map3 = new google.maps.Map(document.getElementById('ktmap'), {
                 zoom: 17,
                 center: ktmap
             });
-
             var marker3 = new google.maps.Marker({
                 position: ktmap,
                 map: map3,
                 title: 'Kwun Tong Centre'
             });
-
             var map4 = new google.maps.Map(document.getElementById('htmap'), {
                 zoom: 17,
                 center: htmap
             });
-
             var marker4 = new google.maps.Marker({
                 position: htmap,
                 map: map4,
                 title: 'Laboratory'
             });
-
         }
-
-
     </script>
     <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBP_l2m6R9EniSKzsoib6UZTywptgj3DU0&callback=initMap">
     </script>
-
-
-
-
     <footer>
         ©Copyright. Hercules Medical Diagnostic & Laboratory Group Limited 2016. All Rights Reserved.
     </footer>
