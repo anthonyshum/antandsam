@@ -15,7 +15,7 @@
         </ul>
     </div>
     <div id="fixednav">
-        <ul class="main">
+        <ul class="main" id="fixednavul">
             <li class="fixednavli"><a href="Home.html">Home</a></li>
             <li class="dropdown">
                 <a href="services.html" class="dropbtn">Serives ></a>
@@ -45,46 +45,88 @@
             <li class="fixednavli"><a href="news.html">What's New</a></li>
             <li class="fixednavli"><a href="contactus.html">Contact Us</a></li>
             <li class="fixednavli"><a href="careers.html">Careers</a></li>
+            <li class="icon">
+                <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
             <li class="fixednavli"><a href="login.html">Login</a></li>
         </ul>
     </div>
     <div id="contentfirstrow"></div>
     <h1 style="padding-top:10px;text-align:center;color:#202358">Our Services</h1>
     <p style="padding:20px;margin-left:20%;margin-right:15%;">We provide a wide range of services including MRI.......</p>
-    <div id="MRI"><h2 style="text-align:center; color:#202358">Magnetic Resonance Imaging (MRI)</h2></div>
+    <button id="services680" class="services680show" onclick="myFunction1()"><h3>SERV I CES></h3></button>
+    <div id="services680d" class="services680div">
+        <div class="servicescontent">
+            <a class="services680a" href="services.html">Magnetic Resonance Imaging (MRI)</a>
+        </div>
+        <div class="servicescontent">
+            <a class="services680a" href="services.html#CT">Computed Tomography (CT)</a>
+        </div>
+        <div class="servicescontent">
+            <a class="services680a" href="services.html#US">Ultrasound (U/S) Scan</a>
+        </div>
+        <div class="servicescontent">
+            <a class="services680a" href="services.html#MAM">Mammography</a>
+        </div>
+        <div class="servicescontent">
+            <a class="services680a" href="services.html#XR">General X-Ray Examination</a>
+        </div>
+        <div class="servicescontent">
+            <a class="services680a" href="services.html#XC">Contrast Study</a>
+        </div>
+        <div class="servicescontent">
+            <a class="services680a" href="services.html#XD">Bone Densitometry (DEXA)</a>
+        </div>
+        <div class="servicescontent">
+            <a class="services680a" href="services.html#ECG">Resting Electrocardiography (ECG)</a>
+        </div>
+        <div class="servicescontent">
+            <a class="services680a" href="services.html#LAB">Laboratory Test</a>
+        </div>
+        <div class="servicescontent">
+            <a class="services680a" href="services.html#OS">Other Services</a>
+        </div>
+    </div>
+    <div id="MRI"><h2 class="servicesavaheader">Magnetic Resonance Imaging (MRI)</h2></div>
     <div class="section group">
         <div class="col span_4_of_12">
-            <center><img src="imgs/mri2.jpg" style="width:50%"></center>
+            <center><img src="imgs/mri2.jpg" class="servicesavaimg"></center>
         </div>
         <div class="col span_4_of_12">
-            <p style="margin-left:10%;margin-right:10%;">
+            <p class="servicesavacontent">
                 &emsp;&emsp;Magnetic resonance imaging (MRI) is a medical imaging technique used in radiology to form pictures of the anatomy and the physiological processes of the body in both health and disease. MRI scanners use strong magnetic fields, radio waves, and field gradients to generate images of the inside of the body.
             </p>
         </div>
         <div class="col span_4_of_12">
-            <h2 style="margin-left:10%;margin-right:10%;">Centre Available:</h2>
+            <h2 class="servicesavacentreava">Centre Available:</h2>
             <a href="centres.html" style="text-decoration:none;margin-left:10%;margin-right:10%;">Causeway Bay</a>
         </div>
     </div>
-
-    <div id="CT"><h2 style="text-align:center; color:#202358">Computed Tomography (CT)</h2></div>
+    <hr>
+    <div id="CT"><h2 class="servicesavaheader">Computed Tomography (CT)</h2></div>
     <div class="section group">
         <div class="col span_4_of_12">
-            <center><img src="imgs/ct1.jpg" style="width:50%"></center>
+            <center><img src="imgs/ct1.jpg" class="servicesavaimg"></center>
         </div>
         <div class="col span_4_of_12">
-            <p style="margin-left:10%;margin-right:10%;">
+            <p class="servicesavacontent">
                 &emsp;&emsp;CT scan makes use of computer-processed combinations of many X-ray images taken from different angles to produce cross-sectional (tomographic) images (virtual "slices") of specific areas of a scanned object, allowing the user to see inside the object without cutting.
                 Digital geometry processing is used to generate a three-dimensional image of the inside of the object from a large series of two-dimensional radiographic images taken around a single axis of rotation.[2] Medical imaging is the most common application of X-ray CT. Its cross-sectional images are used for diagnostic and therapeutic purposes in various medical disciplines.[3] The rest of this article discusses medical-imaging X-ray CT; industrial applications of X-ray CT are discussed at industrial computed tomography scanning.
             </p>
         </div>
         <div class="col span_4_of_12">
-            <h2 style="margin-left:10%;margin-right:10%;">Centre Available:</h2>
+            <h2 class="servicesavacentreava">Centre Available:</h2>
             <a href="centres.html" style="text-decoration:none;margin-left:10%;margin-right:10%;">Causeway Bay</a>
         </div>
     </div>
-
-
+    <script src="navscript.js"></script>
+    <script src="jquery-3.1.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#services680").click(function () {
+                $("#services680d").toggle();
+            });
+        });
+    </script>
     <footer>
         ©Copyright. Hercules Medical Diagnostic & Laboratory Group Limited 2016. All Rights Reserved.
     </footer>

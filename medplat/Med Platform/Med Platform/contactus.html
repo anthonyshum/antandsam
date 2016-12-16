@@ -16,7 +16,7 @@
         </ul>
     </div>
     <div id="fixednav">
-        <ul class="main">
+        <ul class="main" id="fixednavul">
             <li class="fixednavli"><a href="Home.html">Home</a></li>
             <li class="dropdown">
                 <a href="services.html" class="dropbtn">Serives ></a>
@@ -46,6 +46,8 @@
             <li class="fixednavli"><a href="news.html">What's New</a></li>
             <li class="fixednavli"><a href="contactus.html">Contact Us</a></li>
             <li class="fixednavli"><a href="careers.html">Careers</a></li>
+            <li class="icon">
+                <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
             <li class="fixednavli"><a href="login.html">Login</a></li>
         </ul>
     </div>
@@ -60,33 +62,40 @@
                 <p><b>Tel:</b> 2893 2819<br><b>Fax:</b> 2893 2309</p>
                 <button id="contactusehmap" class="contactusmap" onclick="myFunction1()">Click to Hide Map</button>
                 <div id="ehmap" class="contactusgmap"></div>
+                <hr>
                 <h2><a href="centres.html#CH" style="text-decoration:none;color:#308d9b">Jordan Centre</a></h2>
                 <p style="font-weight:bold">Address:</p>
                 <p>Room 913A, Champion Building, 301-309 Nathan Road, <br>Jordan, Kowloon</p>
                 <p><b>Tel:</b> 3523 1151<br><b>Fax:</b> 3523 1152</p>
                 <button id="contactuschmap" class="contactusmap" onclick="myFunction2()">Click to Hide Map</button>
                 <div id="chmap" class="contactusgmap"></div>
+                <hr>
                 <h2><a href="centres.html#KT" style="text-decoration:none;color:#308d9b">Kwun Tong Centre</a></h2>
                 <p style="font-weight:bold">Address:</p>
                 <p>Room 2002-03A, 20/F, Entreprot Centre, 117 How Ming Street, <br>Kwun Tong, Kowloon</p>
                 <p><b>Tel:</b> 3162 3982<br><b>Fax:</b> 3162 3985</p>
                 <button id="contactusktmap" class="contactusmap" onclick="myFunction3()">Click to Hide Map</button>
                 <div id="ktmap" class="contactusgmap"></div>
+                <hr>
                 <h2><a href="centres.html#HT" style="text-decoration:none;color:#308d9b">Laboratory</a></h2>
                 <p style="font-weight:bold">Address:</p>
                 <p>Room 1503, Hon Kwok Jordan Centre, 7 Hillwood Road,<br>Tsim Sha Tsui, Kowloon</p>
                 <p><b>Tel:</b> 2904 7808<br><b>Fax:</b> 2904 7008</p>
                 <button id="contactushtmap" class="contactusmap" onclick="myFunction4()">Click to Hide Map</button>
                 <div id="htmap" class="contactusgmap"></div>
+                <hr>
                 <h2 id="contactusmar" style="text-decoration:none;color:#308d9b">Marketing Dept.</h2>
                 <p>Mr. Andy Lee</p>
                 <p><b>Tel:</b> 2904 7808<br><b>Fax:</b> 2904 7008</p>
+                <hr>
                 <h2 id="contactacct" style="text-decoration:none;color:#308d9b">Accounts Dept.</h2>
                 <p>Mr. Anthony Shum</p>
                 <p><b>Tel:</b> 2904 7808<br><b>Fax:</b> 2904 7008</p>
+                <hr>
                 <h2 id="contactIT" style="text-decoration:none;color:#308d9b">IT Support Team</h2>
                 <p>Mr. Anthony Shum</p>
                 <p><b>Tel:</b> 2904 7808<br><b>Fax:</b> 2904 7008</p>
+                <hr>
             </div>
         </div>
         <div class="col span_6_of_12">
@@ -232,6 +241,8 @@
             }
         }
     </script>
+    <script src="navscript.js"></script>
+
     <footer>
         ©Copyright. Hercules Medical Diagnostic & Laboratory Group Limited 2016. All Rights Reserved.
     </footer>

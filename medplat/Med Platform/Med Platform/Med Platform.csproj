@@ -117,6 +117,7 @@
     <Content Include="login.html" />
     <Content Include="Nav and footer.css" />
     <Content Include="Nav and footer.html" />
+    <Content Include="navscript.js" />
     <Content Include="news.html" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">

@@ -15,7 +15,7 @@
         </ul>
     </div>
     <div id="fixednav">
-        <ul class="main">
+        <ul class="main" id="fixednavul">
             <li class="fixednavli"><a href="Home.html">Home</a></li>
             <li class="dropdown">
                 <a href="services.html" class="dropbtn">Serives ></a>
@@ -45,90 +45,77 @@
             <li class="fixednavli"><a href="news.html">What's New</a></li>
             <li class="fixednavli"><a href="contactus.html">Contact Us</a></li>
             <li class="fixednavli"><a href="careers.html">Careers</a></li>
+            <li class="icon">
+                <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
             <li class="fixednavli"><a href="login.html">Login</a></li>
         </ul>
     </div>
     <div id="contentfirstrow"></div>
     <h1 style="padding-top:10px;text-align:center;color:#202358">Our Centres</h1>
     <p style="padding:20px;margin-left:20%;margin-right:15%;">Our centres located near MTR station and easy to reach.</p>
-    <div id="EH"><h2 style="text-align:center; color:#308d9b">Causeway Bay Centre</h2></div>
-    <center><img src="imgs/mri2.jpg" style="width:50%;max-width:300px;height:auto;"></center>
-    <div class="section group">
-        <div class="col span_4_of_12">
-            <div id="ehmap" class="centremap"></div>
+    <button id="centre680" class="centre680show" onclick="myFunction1()"><h3>CENTRE></h3></button>
+    <div id="centre680d" class="centre680div">
+        <div class="centrecontent">
+            <a class="centre680a" href="centres.html">Causeway Bay</a>
         </div>
-        <div class="col span_4_of_12">
-            <h3 class=centrecontactinfo style="color:#308d9b">Contact Information:</h3>
-            <p class=centrecontactinfo style="font-weight:bold">Address:</p>
-            <p class=centrecontactinfo>Shop 22, G/F, Elizabeth House,<br> 250-254 Gloucester Road, Causeway Bay, H.K.</p>
-            <p class=centrecontactinfo><b>Tel:</b> 2893 2819</p>
-            <p class=centrecontactinfo><b>Fax:</b> 2893 2309</p>
-            <p class=centrecontactinfo style="color:#308d9b"><b>Opening Hours:</b></p>
-            <p class=centrecontactinfo><b>Monday to Friday:</b></p>
-            <p class=centrecontactinfo>9:00a.m. to 1:00p.m. ; 2:00p.m. to 6:00p.m.</p>
-            <p class=centrecontactinfo><b>Saturday:</b></p>
-            <p class=centrecontactinfo>9:00a.m. to 1:00p.m. ; 2:00p.m. to 5:00p.m.</p>
-            <p class=centrecontactinfo><b>Sunday & Public Holiday Closed</b></p>
+        <div class="centrecontent">
+            <a class="centre680a" href="centres.html#CH">Jordan</a>
         </div>
-        <div class="col span_4_of_12">
-            <h3 class="servicesava" style="color:#308d9b">Services Available:</h3>
-            <p class="servicesava"><a href="services.html">Magnetic Resonance Imaging (MRI)</a></p>
-            <p class="servicesava"><a href="services.html#CT">Computed Tomography (CT)</a></p>
-            <p class="servicesava"><a href="services.html#US">Ultrasound (U/S) Scan</a></p>
-            <p class="servicesava"><a href="services.html#MAM">Mammography</a></p>
-            <p class="servicesava"><a href="services.html#XR">General X-Ray Examination</a></p>
-            <p class="servicesava"><a href="services.html#XC">Contrast Study</a></p>
-            <p class="servicesava"><a href="services.html#XD">Bone Densitometry (DEXA)</a></p>
-            <p class="servicesava"><a href="services.html#ECG">Resting Electrocardiography (ECG)</a></p>
-            <p class="servicesava"><a href="services.html#OS">Lung Function Test (Spirometry)</a></p>
-            <p class="servicesava"><a href="services.html#LAB">Laboratory Test</a></p>
+        <div class="centrecontent">
+            <a class="centre680a" href="centres.html#KT">Kwun Tong</a>
+        </div>
+        <div class="centrecontent">
+            <a class="centre680a" href="centres.html#HT">Laboratory</a>
         </div>
     </div>
-    <div id="CH"><h2 style="text-align:center; color:#308d9b">Jordan Centre</h2></div>
-    <center><img src="imgs/mri2.jpg" style="width:50%;max-width:300px;height:auto;"></center>
-    <div class="section group">
-        <div class="col span_4_of_12">
-            <div id="chmap" class="centremap"></div>
-        </div>
-        <div class="col span_4_of_12">
-            <h3 class=centrecontactinfo style="color:#308d9b">Contact Information:</h3>
-            <p class=centrecontactinfo style="font-weight:bold">Address:</p>
-            <p class=centrecontactinfo>Room 913A, Champion Building,<br>301-309 Nathan Road, Jordan, Kowloon</p>
-            <p class=centrecontactinfo><b>Tel:</b> 3523 1151</p>
-            <p class=centrecontactinfo><b>Fax:</b> 3523 1152</p>
-            <p class=centrecontactinfo style="color:#308d9b"><b>Opening Hours:</b></p>
-            <p class=centrecontactinfo><b>Monday to Friday:</b></p>
-            <p class=centrecontactinfo>9:00a.m. to 1:00p.m. ; 2:00p.m. to 6:00p.m.</p>
-            <p class=centrecontactinfo><b>Saturday:</b></p>
-            <p class=centrecontactinfo>9:00a.m. to 1:00p.m. ; 2:00p.m. to 5:00p.m.</p>
-            <p class=centrecontactinfo><b>Sunday & Public Holiday Closed</b></p>
-        </div>
-        <div class="col span_4_of_12">
-            <h3 class="servicesava" style="color:#308d9b">Services Available:</h3>
-            <p class="servicesava"><a href="services.html#US">Ultrasound (U/S) Scan</a></p>
-            <p class="servicesava"><a href="services.html#MAM">Mammography</a></p>
-            <p class="servicesava"><a href="services.html#XR">General X-Ray Examination</a></p>
-            <p class="servicesava"><a href="services.html#XC">Contrast Study</a></p>
-            <p class="servicesava"><a href="services.html#XD">Bone Densitometry (DEXA)</a></p>
-            <p class="servicesava"><a href="services.html#ECG">Resting Electrocardiography (ECG)</a></p>
-            <p class="servicesava"><a href="services.html#OS">Treadmill Exercise Stress Test</a></p>
-            <p class="servicesava"><a href="services.html#OS">Lung Function Test (Spirometry)</a></p>
-            <p class="servicesava"><a href="services.html#LAB">Laboratory Test</a></p>
-        </div>
-    </div>
-    <div id="KT"><h2 style="text-align:center; color:#308d9b">Kwun Tong Centre</h2></div>
-    <center><img src="imgs/mri2.jpg" style="width:50%;max-width:300px;height:auto;"></center>
-    <div class="section group">
+    <div id="EH">
+        <h2 class="centreheader">Causeway Bay Centre</h2>
+        <center><img src="imgs/mri2.jpg" style="width:50%;max-width:300px;height:auto;"></center>
         <div class="section group">
             <div class="col span_4_of_12">
-                <div id="ktmap" class="centremap"></div>
+                <div id="ehmap" class="centremap"></div>
             </div>
             <div class="col span_4_of_12">
                 <h3 class=centrecontactinfo style="color:#308d9b">Contact Information:</h3>
                 <p class=centrecontactinfo style="font-weight:bold">Address:</p>
-                <p class=centrecontactinfo>Room 2002-03A, 20/F, Entreprot Centre,<br> 117 How Ming Street, Kwun Tong, Kowloon</p>
-                <p class=centrecontactinfo><b>Tel:</b> 3162 3982</p>
-                <p class=centrecontactinfo><b>Fax:</b> 3162 3985</p>
+                <p class=centrecontactinfo>Shop 22, G/F, Elizabeth House,<br> 250-254 Gloucester Road, Causeway Bay, H.K.</p>
+                <p class=centrecontactinfo><b>Tel:</b> 2893 2819</p>
+                <p class=centrecontactinfo><b>Fax:</b> 2893 2309</p>
+                <p class=centrecontactinfo style="color:#308d9b"><b>Opening Hours:</b></p>
+                <p class=centrecontactinfo><b>Monday to Friday:</b></p>
+                <p class=centrecontactinfo>9:00a.m. to 1:00p.m. ; 2:00p.m. to 6:00p.m.</p>
+                <p class=centrecontactinfo><b>Saturday:</b></p>
+                <p class=centrecontactinfo>9:00a.m. to 1:00p.m. ; 2:00p.m. to 5:00p.m.</p>
+                <p class=centrecontactinfo><b>Sunday & Public Holiday Closed</b></p>
+            </div>
+            <div class="col span_4_of_12">
+                <h3 class="servicesava" style="color:#308d9b">Services Available:</h3>
+                <p class="servicesava"><a href="services.html">Magnetic Resonance Imaging (MRI)</a></p>
+                <p class="servicesava"><a href="services.html#CT">Computed Tomography (CT)</a></p>
+                <p class="servicesava"><a href="services.html#US">Ultrasound (U/S) Scan</a></p>
+                <p class="servicesava"><a href="services.html#MAM">Mammography</a></p>
+                <p class="servicesava"><a href="services.html#XR">General X-Ray Examination</a></p>
+                <p class="servicesava"><a href="services.html#XC">Contrast Study</a></p>
+                <p class="servicesava"><a href="services.html#XD">Bone Densitometry (DEXA)</a></p>
+                <p class="servicesava"><a href="services.html#ECG">Resting Electrocardiography (ECG)</a></p>
+                <p class="servicesava"><a href="services.html#OS">Lung Function Test (Spirometry)</a></p>
+                <p class="servicesava"><a href="services.html#LAB">Laboratory Test</a></p>
+            </div>
+        </div>
+    </div>
+    <div id="CH">
+        <h2 class="centreheader">Jordan Centre</h2>
+        <center><img src="imgs/mri2.jpg" style="width:50%;max-width:300px;height:auto;"></center>
+        <div class="section group">
+            <div class="col span_4_of_12">
+                <div id="chmap" class="centremap"></div>
+            </div>
+            <div class="col span_4_of_12">
+                <h3 class=centrecontactinfo style="color:#308d9b">Contact Information:</h3>
+                <p class=centrecontactinfo style="font-weight:bold">Address:</p>
+                <p class=centrecontactinfo>Room 913A, Champion Building,<br>301-309 Nathan Road, Jordan, Kowloon</p>
+                <p class=centrecontactinfo><b>Tel:</b> 3523 1151</p>
+                <p class=centrecontactinfo><b>Fax:</b> 3523 1152</p>
                 <p class=centrecontactinfo style="color:#308d9b"><b>Opening Hours:</b></p>
                 <p class=centrecontactinfo><b>Monday to Friday:</b></p>
                 <p class=centrecontactinfo>9:00a.m. to 1:00p.m. ; 2:00p.m. to 6:00p.m.</p>
@@ -139,32 +126,70 @@
             <div class="col span_4_of_12">
                 <h3 class="servicesava" style="color:#308d9b">Services Available:</h3>
                 <p class="servicesava"><a href="services.html#US">Ultrasound (U/S) Scan</a></p>
+                <p class="servicesava"><a href="services.html#MAM">Mammography</a></p>
                 <p class="servicesava"><a href="services.html#XR">General X-Ray Examination</a></p>
+                <p class="servicesava"><a href="services.html#XC">Contrast Study</a></p>
+                <p class="servicesava"><a href="services.html#XD">Bone Densitometry (DEXA)</a></p>
                 <p class="servicesava"><a href="services.html#ECG">Resting Electrocardiography (ECG)</a></p>
+                <p class="servicesava"><a href="services.html#OS">Treadmill Exercise Stress Test</a></p>
+                <p class="servicesava"><a href="services.html#OS">Lung Function Test (Spirometry)</a></p>
                 <p class="servicesava"><a href="services.html#LAB">Laboratory Test</a></p>
             </div>
         </div>
     </div>
-    <div id="HT"><h2 style="text-align:center; color:#308d9b">Laboratory</h2></div>
-    <center><img src="imgs/mri2.jpg" style="width:50%;max-width:300px;height:auto;"></center>
-    <div style="margin-left:20%;margin-right:20%;">Our Office & Laboratory located at Hillwood Road, Tsim Sha Tsui provides diagnostic laboratory testing. </div>
-    <div class="section group">
-        <div class="col span_4_of_12">
-            <div id="htmap" class="centremap"></div>
+    <div id="KT">
+        <h2 class="centreheader">Kwun Tong Centre</h2>
+        <center><img src="imgs/mri2.jpg" style="width:50%;max-width:300px;height:auto;"></center>
+        <div class="section group">
+            <div class="section group">
+                <div class="col span_4_of_12">
+                    <div id="ktmap" class="centremap"></div>
+                </div>
+                <div class="col span_4_of_12">
+                    <h3 class=centrecontactinfo style="color:#308d9b">Contact Information:</h3>
+                    <p class=centrecontactinfo style="font-weight:bold">Address:</p>
+                    <p class=centrecontactinfo>Room 2002-03A, 20/F, Entreprot Centre,<br> 117 How Ming Street, Kwun Tong, Kowloon</p>
+                    <p class=centrecontactinfo><b>Tel:</b> 3162 3982</p>
+                    <p class=centrecontactinfo><b>Fax:</b> 3162 3985</p>
+                    <p class=centrecontactinfo style="color:#308d9b"><b>Opening Hours:</b></p>
+                    <p class=centrecontactinfo><b>Monday to Friday:</b></p>
+                    <p class=centrecontactinfo>9:00a.m. to 1:00p.m. ; 2:00p.m. to 6:00p.m.</p>
+                    <p class=centrecontactinfo><b>Saturday:</b></p>
+                    <p class=centrecontactinfo>9:00a.m. to 1:00p.m. ; 2:00p.m. to 5:00p.m.</p>
+                    <p class=centrecontactinfo><b>Sunday & Public Holiday Closed</b></p>
+                </div>
+                <div class="col span_4_of_12">
+                    <h3 class="servicesava" style="color:#308d9b">Services Available:</h3>
+                    <p class="servicesava"><a href="services.html#US">Ultrasound (U/S) Scan</a></p>
+                    <p class="servicesava"><a href="services.html#XR">General X-Ray Examination</a></p>
+                    <p class="servicesava"><a href="services.html#ECG">Resting Electrocardiography (ECG)</a></p>
+                    <p class="servicesava"><a href="services.html#LAB">Laboratory Test</a></p>
+                </div>
+            </div>
         </div>
-        <div class="col span_4_of_12">
-            <h3 class=centrecontactinfo style="color:#308d9b">Contact Information:</h3>
-            <p class=centrecontactinfo style="font-weight:bold">Address:</p>
-            <p class=centrecontactinfo>Room 1503, Hon Kwok Jordan Centre,<br>7 Hillwood Road, Tsim Sha Tsui, Kowloon</p>
-            <p class=centrecontactinfo><b>Tel:</b> 2904 7808</p>
-            <p class=centrecontactinfo><b>Fax:</b> 2904 7008</p>
-            <p class=centrecontactinfo style="color:#308d9b"><b>Opening Hours:</b></p>
-            <p class=centrecontactinfo><b>Please call for appointment</b></p>
-            <p class=centrecontactinfo><b>Sunday & Public Holiday Closed</b></p>
-        </div>
-        <div class="col span_4_of_12">
-            <h3 class="servicesava" style="color:#308d9b">Services Available:</h3>
-            <p class="servicesava"><a href="services.html#LAB">Laboratory Test</a></p>
+    </div>
+    <div id="HT">
+        <h2 class="centreheader">Laboratory</h2>
+        <center><img src="imgs/mri2.jpg" style="width:50%;max-width:300px;height:auto;"></center>
+        <div style="margin-left:20%;margin-right:20%;">Our Office & Laboratory located at Hillwood Road, Tsim Sha Tsui provides diagnostic laboratory testing. </div>
+        <div class="section group">
+            <div class="col span_4_of_12">
+                <div id="htmap" class="centremap"></div>
+            </div>
+            <div class="col span_4_of_12">
+                <h3 class=centrecontactinfo style="color:#308d9b">Contact Information:</h3>
+                <p class=centrecontactinfo style="font-weight:bold">Address:</p>
+                <p class=centrecontactinfo>Room 1503, Hon Kwok Jordan Centre,<br>7 Hillwood Road, Tsim Sha Tsui, Kowloon</p>
+                <p class=centrecontactinfo><b>Tel:</b> 2904 7808</p>
+                <p class=centrecontactinfo><b>Fax:</b> 2904 7008</p>
+                <p class=centrecontactinfo style="color:#308d9b"><b>Opening Hours:</b></p>
+                <p class=centrecontactinfo><b>Please call for appointment</b></p>
+                <p class=centrecontactinfo><b>Sunday & Public Holiday Closed</b></p>
+            </div>
+            <div class="col span_4_of_12">
+                <h3 class="servicesava" style="color:#308d9b">Services Available:</h3>
+                <p class="servicesava"><a href="services.html#LAB">Laboratory Test</a></p>
+            </div>
         </div>
     </div>
     <script>
@@ -214,6 +239,15 @@
     </script>
     <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBP_l2m6R9EniSKzsoib6UZTywptgj3DU0&callback=initMap">
+    </script>
+    <script src="navscript.js"></script>
+    <script src="jquery-3.1.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#centre680").click(function () {
+                $("#centre680d").toggle();
+            });
+        });
     </script>
     <footer>
         ©Copyright. Hercules Medical Diagnostic & Laboratory Group Limited 2016. All Rights Reserved.

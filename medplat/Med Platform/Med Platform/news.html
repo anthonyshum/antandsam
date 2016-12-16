@@ -16,7 +16,7 @@
         </ul>
     </div>
     <div id="fixednav">
-        <ul class="main">
+        <ul class="main" id="fixednavul">
             <li class="fixednavli"><a href="Home.html">Home</a></li>
             <li class="dropdown">
                 <a href="services.html" class="dropbtn">Serives ></a>
@@ -46,110 +46,59 @@
             <li class="fixednavli"><a href="news.html">What's New</a></li>
             <li class="fixednavli"><a href="contactus.html">Contact Us</a></li>
             <li class="fixednavli"><a href="careers.html">Careers</a></li>
+            <li class="icon">
+                <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
             <li class="fixednavli"><a href="login.html">Login</a></li>
         </ul>
     </div>
     <div id="contentfirstrow"></div>
     <h1 style="padding-top:10px;text-align:center;color:#202358">What's New</h1>
     <div class="section group">
-        <div class="col span_4_of_12">
-            <div style="margin-left:10%;">
-                <h2>List</h2>
-                <div>
-                    <p><b>Date:</b> 1st December, 2017</p>
-                    <p><b>News:</b> Hung Hom Centre Grand Opening</p>
-                </div>
-                <div>
-                    <p><b>Date:</b> 1st December, 2016</p>
-                    <p><b>News:</b> Kwun Tong Centre with Ultrasound Scan Service Available</p>
-                </div>
-                <div>
-                    <p><b>Date:</b> 1st December, 2015</p>
-                    <p><b>News:</b> Hung Hom Centre Grand Opening</p>
-                </div>
-                <div>
-                    <p><b>Date:</b> 1st December, 2015</p>
-                    <p><b>News:</b> Hung Hom Centre Grand Opening</p>
-                </div>
-            </div>
-        </div>
-        <div class="col span_8_of_12">
             <h2 style="border-bottom:double;margin-left:10%;margin-right:10%;margin-bottom:0;">News Update Detail</h2>
             <div style="margin-left:10%;margin-right:10%;border-left:solid;border-left-width:1px;border-left-color:#a3a4bd;">
-                <h3 id="careermed" class="careerdetail" style="color:#202358">New Medical diagnostic Centre - Hung Hom Centre</h3>
-                <button id="careerbutton1" class="contactusmap" style="margin-left:7%;" onclick="myFunction1()">Click to Show Detail</button>
-                <div id="Radiographer" style="display:none;">
-                    <p class="careerdetail"><b>Responsibility:</b></p>
-                    <p class="careerdetail">many responsibility</p>
-                    <p class="careerdetail">many responsibility</p>
-                    <p class="careerdetail">many responsibility</p>
-                    <p class="careerdetail">many responsibility</p>
-                    <p class="careerdetail"><b>Requirement:</b></p>
-                    <p class="careerdetail">many requirement</p>
-                    <p class="careerdetail">many requirement</p>
-                    <p class="careerdetail">many requirement</p>
-                    <p class="careerdetail">many requirement</p>
-                    <p class="careerdetail">many requirement</p>
+                <h4 class="newsdate">1st December, 2017</h4>
+                <h3 class="newsheader">New Medical diagnostic Centre - Hung Hom Centre</h3>
+                <div id="hhctr" class="newsdetail">
+                This is a lot of content
                 </div>
+                <button id="newsbutton1" class="shownews" onclick="myFunction1()">Click to Show Detail</button>
                 <hr>
-                <h3 class="careerdetail" id="careerlab" style="color:#202358">Laboratory Department</h3>
-                <h4 class="careerdetail" id="la">Laboratory Assistant</h4>
-                <button id="careerbutton2" class="contactusmap" style="margin-left:7%;" onclick="myFunction2()">Click to Show Detail</button>
-                <div id="laboratoryassistant" style="display:none;">
-                    <p class="careerdetail"><b>Responsibility:</b></p>
-                    <p class="careerdetail">many responsibility</p>
-                    <p class="careerdetail">many responsibility</p>
-                    <p class="careerdetail">many responsibility</p>
-                    <p class="careerdetail">many responsibility</p>
-                    <p class="careerdetail"><b>Requirement:</b></p>
-                    <p class="careerdetail">many requirement</p>
-                    <p class="careerdetail">many requirement</p>
-                    <p class="careerdetail">many requirement</p>
-                    <p class="careerdetail">many requirement</p>
-                    <p class="careerdetail">many requirement</p>
+                <h4 class="newsdate">1st December, 2016</h4>
+                <h3 class="newsheader">Ultrasound Scan service available in Kwun Tong Centre</h3>
+                <div id="usscankt" class="newsdetail">
+                This is a lot of content
                 </div>
+                <button id="newsbutton2" class="shownews" onclick="myFunction2()">Click to Show Detail</button>
                 <hr>
-                <h3 class="careerdetail" id="careeradmin" style="color:#202358">Administration Department</h3>
-                <h4 class="careerdetail" id="ac">Accounts Clerk</h4>
-                <button id="careerbutton3" class="contactusmap" style="margin-left:7%;" onclick="myFunction3()">Click to Show Detail</button>
-                <div id="accountsclerk" style="display:none;">
-                    <p class="careerdetail"><b>Responsibility:</b></p>
-                    <p class="careerdetail">many responsibility</p>
-                    <p class="careerdetail">many responsibility</p>
-                    <p class="careerdetail">many responsibility</p>
-                    <p class="careerdetail">many responsibility</p>
-                    <p class="careerdetail"><b>Requirement:</b></p>
-                    <p class="careerdetail">many requirement</p>
-                    <p class="careerdetail">many requirement</p>
-                    <p class="careerdetail">many requirement</p>
-                    <p class="careerdetail">many requirement</p>
-                    <p class="careerdetail">many requirement</p>
+                <h4 class="newsdate">1st December, 2016</h4>
+                <h3 class="newsheader">New Web Site, for Mobile and PC</h3>
+                <div id="website" class="newsdetail">
+                This is a lot of content
                 </div>
+                <button id="newsbutton3" class="shownews" onclick="myFunction3()">Click to Show Detail</button>
                 <hr>
             </div>
         </div>
-    </div>
-    <div style="margin-left:10%;margin-right:10%;">Interested candidate, please send all relevent certificates and resume soft copy to <b>hr@herculesgroup.com.hk</b>.</div>
     <script>
         $(document).ready(function () {
-            $("#careerbutton1").click(function () {
-                $("#Radiographer").toggle();
+            $("#newsbutton1").click(function () {
+                $("#hhctr").toggle();
             });
         });
         $(document).ready(function () {
-            $("#careerbutton2").click(function () {
-                $("#laboratoryassistant").toggle();
+            $("#newsbutton2").click(function () {
+                $("#usscankt").toggle();
             });
         });
         $(document).ready(function () {
-            $("#careerbutton3").click(function () {
-                $("#accountsclerk").toggle();
+            $("#newsbutton3").click(function () {
+                $("#website").toggle();
             });
         });
     </script>
     <script>
         function myFunction1() {
-            var change = document.getElementById("careerbutton1");
+            var change = document.getElementById("newsbutton1");
             if (change.innerHTML == "Click to Show Detail") {
                 change.innerHTML = "Click to Hide Detail";
             }
@@ -158,7 +107,7 @@
             }
         }
         function myFunction2() {
-            var change = document.getElementById("careerbutton2");
+            var change = document.getElementById("newsbutton2");
             if (change.innerHTML == "Click to Show Detail") {
                 change.innerHTML = "Click to Hide Detail";
             }
@@ -167,7 +116,7 @@
             }
         }
         function myFunction3() {
-            var change = document.getElementById("careerbutton3");
+            var change = document.getElementById("newsbutton3");
             if (change.innerHTML == "Click to Show Detail") {
                 change.innerHTML = "Click to Hide Detail";
             }
@@ -176,12 +125,10 @@
             }
         }
     </script>
+    <script src="navscript.js"></script>
+
     <footer>
         ©Copyright. Hercules Medical Diagnostic & Laboratory Group Limited 2016. All Rights Reserved.
     </footer>
-
-
-
 </body>
-
 </html>

@@ -16,7 +16,7 @@
         </ul>
     </div>
     <div id="fixednav">
-        <ul class="main">
+        <ul class="main" id="fixednavul">
             <li class="fixednavli"><a href="Home.html">Home</a></li>
             <li class="dropdown">
                 <a href="services.html" class="dropbtn">Serives ></a>
@@ -46,6 +46,8 @@
             <li class="fixednavli"><a href="news.html">What's New</a></li>
             <li class="fixednavli"><a href="contactus.html">Contact Us</a></li>
             <li class="fixednavli"><a href="careers.html">Careers</a></li>
+            <li class="icon">
+                <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
             <li class="fixednavli"><a href="login.html">Login</a></li>
         </ul>
     </div>
@@ -55,15 +57,15 @@
         <div class="col span_4_of_12">
             <div style="margin-left:10%;">
                 <img src="imgs/hrpic.png" style="width:100%;height:auto;">
-                Make Hercules Great Again!
+                <p>Make Hercules Great Again!</p>
+                <div style="margin-left:10%;margin-right:10%;">Interested candidate, please send all relevent certificates and resume soft copy to <b>hr@herculesgroup.com.hk</b>.</div>
             </div>
         </div>
         <div class="col span_8_of_12">
             <h2 style="border-bottom:double;margin-left:10%;margin-right:10%;margin-bottom:0;">Opening Position</h2>
             <div style="margin-left:10%;margin-right:10%;border-left:solid;border-left-width:1px;border-left-color:#a3a4bd;">
-                <h3 id="careermed" class="careerdetail" style="color:#202358">Operation Department</h3>
-                <h4 class="careerdetail">Radiographer</h4>
-                <button id="careerbutton1" class="contactusmap" style="margin-left:7%;" onclick="myFunction1()">Click to Show Detail</button>
+                <h3 id="careermed" class="careerdept">Operation Department</h3>
+                <h4 class="careerpost">Radiographer</h4>
                 <div id="Radiographer" style="display:none;">
                     <p class="careerdetail"><b>Responsibility:</b></p>
                     <p class="careerdetail">many responsibility</p>
@@ -77,9 +79,9 @@
                     <p class="careerdetail">many requirement</p>
                     <p class="careerdetail">many requirement</p>
                 </div>
-                <h4 class="careerdetail" id="ca">Clinical Assistant</h4>
-                <button id="careerbutton2" class="contactusmap" style="margin-left:7%;" onclick="myFunction2()">Click to Show Detail</button>
-                <div id="clinicalassistant" style="display:none;">
+                <button id="careerbutton1" class="showcareer" onclick="myFunction1()">Click to Show Detail</button>
+                <h4 class="careerpost" id="ca">Clinical Assistant</h4>
+                <div id="clinicalassistant" class="careerdetailhead">
                     <p class="careerdetail"><b>Responsibility:</b></p>
                     <p class="careerdetail">many responsibility</p>
                     <p class="careerdetail">many responsibility</p>
@@ -92,11 +94,11 @@
                     <p class="careerdetail">many requirement</p>
                     <p class="careerdetail">many requirement</p>
                 </div>
+                <button id="careerbutton2" class="showcareer" onclick="myFunction2()">Click to Show Detail</button>
                 <hr>
-                <h3 class="careerdetail" id="careerlab" style="color:#202358">Laboratory Department</h3>
-                <h4 class="careerdetail" id="la">Laboratory Assistant</h4>
-                <button id="careerbutton3" class="contactusmap" style="margin-left:7%;" onclick="myFunction3()">Click to Show Detail</button>
-                <div id="laboratoryassistant" style="display:none;">
+                <h3 class="careerdept" id="careerlab">Laboratory Department</h3>
+                <h4 class="careerpost" id="la">Laboratory Assistant</h4>
+                <div id="laboratoryassistant" class="careerdetailhead">
                     <p class="careerdetail"><b>Responsibility:</b></p>
                     <p class="careerdetail">many responsibility</p>
                     <p class="careerdetail">many responsibility</p>
@@ -109,11 +111,11 @@
                     <p class="careerdetail">many requirement</p>
                     <p class="careerdetail">many requirement</p>
                 </div>
+                <button id="careerbutton3" class="showcareer" onclick="myFunction3()">Click to Show Detail</button>
                 <hr>
-                <h3 class="careerdetail" id="careeradmin" style="color:#202358">Administration Department</h3>
-                <h4 class="careerdetail" id="ac">Accounts Clerk</h4>
-                <button id="careerbutton4" class="contactusmap" style="margin-left:7%;" onclick="myFunction4()">Click to Show Detail</button>
-                <div id="accountsclerk" style="display:none;">
+                <h3 class="careerdept" id="careeradmin">Administration Department</h3>
+                <h4 class="careerpost" id="ac">Accounts Clerk</h4>
+                <div id="accountsclerk" class="careerdetailhead">
                     <p class="careerdetail"><b>Responsibility:</b></p>
                     <p class="careerdetail">many responsibility</p>
                     <p class="careerdetail">many responsibility</p>
@@ -126,11 +128,11 @@
                     <p class="careerdetail">many requirement</p>
                     <p class="careerdetail">many requirement</p>
                 </div>
+                <button id="careerbutton4" class="showcareer" onclick="myFunction4()">Click to Show Detail</button>
                 <hr>
             </div>
         </div>
     </div>
-    <div style="margin-left:10%;margin-right:10%;">Interested candidate, please send all relevent certificates and resume soft copy to <b>hr@herculesgroup.com.hk</b>.</div>
     <script>
         $(document).ready(function () {
             $("#careerbutton1").click(function () {
@@ -191,6 +193,8 @@
             }
         }
     </script>
+    <script src="navscript.js"></script>
+
     <footer>
         ©Copyright. Hercules Medical Diagnostic & Laboratory Group Limited 2016. All Rights Reserved.
     </footer>

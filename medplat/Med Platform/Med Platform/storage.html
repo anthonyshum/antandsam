@@ -1,42 +1,153 @@
-﻿<!doctype html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>CSS Only Navigation Menu</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="storage.css" rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+        }
+
+        ul.topnav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+            ul.topnav li {
+                float: left;
+            }
+
+                ul.topnav li a {
+                    display: inline-block;
+                    color: #f2f2f2;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                    transition: 0.3s;
+                    font-size: 17px;
+                }
+
+                    ul.topnav li a:hover {
+                        background-color: #555;
+                    }
+
+                ul.topnav li.icon {
+                    display: none;
+                }
+
+        @media screen and (max-width:680px) {
+            ul.topnav li:not(:first-child) {
+                display: none;
+            }
+
+            ul.topnav li.icon {
+                float: right;
+                display: inline-block;
+            }
+        }
+
+        @media screen and (max-width:680px) {
+            ul.topnav.responsive {
+                position: relative;
+            }
+
+                ul.topnav.responsive li.icon {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                }
+
+                ul.topnav.responsive li {
+                    float: none;
+                    display: inline;
+                }
+
+                    ul.topnav.responsive li a {
+                        display: block;
+                        text-align: left;
+                    }
+        }
+    </style>
 </head>
 <body>
-    <div style="position:fixed;">asdasd</div>
+
+    <ul class="topnav" id="myTopnav">
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li class="icon">
+            <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+        </li>
+    </ul>
+
+
 
     <div id="fixednav">
-        <label for="show-menu" class="show-menu">Show Menu</label>
-        <input type="checkbox" id="show-menu" role="button">
-        <ul id="menu">
-            <li><a href="#">Home</a></li>
-            <li>
-                <a href="#">About ￬</a>
-                <ul class="hidden">
-                    <li><a href="#">Who We Are</a></li>
-                    <li><a href="#">What We Do</a></li>
-                </ul>
+        <ul class="main">
+            <li class="fixednavli"><a href="Home.html">Home</a></li>
+            <li class="dropdown">
+                <a href="services.html" class="dropbtn">Serives ></a>
+                <div class="dropdown-content">
+                    <a href="services.html">Magnetic Resonance Imaging (MRI)</a>
+                    <a href="services.html#CT">Computed Tomography (CT)</a>
+                    <a href="services.html#US">Ultrasound (U/S) Scan</a>
+                    <a href="services.html#MAM">Mammography</a>
+                    <a href="services.html#XR">General X-Ray Examination</a>
+                    <a href="services.html#XC">Contrast Study</a>
+                    <a href="services.html#XD">Bone Densitometry (DEXA)</a>
+                    <a href="services.html#ECG">Resting Electrocardiography (ECG)</a>
+                    <a href="services.html#LAB">Laboratory Test</a>
+                    <a href="services.html#OS">Other Services</a>
+                </div>
+            <li class="dropdown">
+                <a href="centres.html" class="dropbtn">Centres ></a>
+                <div class="dropdown-content">
+                    <a href="centres.html">Causeway Bay</a>
+                    <a href="centres.html#CH">Jordan</a>
+                    <a href="centres.html#KT">Kwun Tong</a>
+                    <a href="centres.html#HT">Laboratory</a>
+                </div>
             </li>
-            <li>
-                <a href="#">Portfolio ￬</a>
-                <ul class="hidden">
-                    <li><a href="#">Photography</a></li>
-                    <li><a href="#">Web & User Interface Design</a></li>
-                    <li><a href="#">Illustration</a></li>
-                </ul>
-            </li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Contact</a></li>
+            <li class="fixednavli"><a href="prof.html">Professional Team</a></li>
+            <li class="fixednavli"><a href="dl.html">Download</a></li>
+            <li class="fixednavli"><a href="news.html">What's New</a></li>
+            <li class="fixednavli"><a href="contactus.html">Contact Us</a></li>
+            <li class="fixednavli"><a href="careers.html">Careers</a></li>
+            <li class="fixednavli"><a href="login.html">Login</a></li>
         </ul>
     </div>
-   
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+    <div style="padding-left:16px">
+        <h2>Responsive Topnav Example</h2>
+        <p>Resize the browser window to see how it works.</p>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
 
 </body>
 </html>
